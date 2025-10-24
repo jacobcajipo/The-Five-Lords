@@ -1,1 +1,18 @@
 @import "tailwindcss";
+
+@layer base {
+    body {
+        font-family: "Work Sans", sans-serif;
+        font-size: large;
+    }
+}
+
+.work-sans-pets-600 {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+@layer components {
+
+}

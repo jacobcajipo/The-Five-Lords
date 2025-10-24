@@ -5,54 +5,114 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/style.css">
-    <title>four-lords</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>The Pets</title>
   </head>
-  <body class="bg-orange-400 flex flex-col">
-    <header class="fixed w-full mt-12">
-      <ul class="py-0.5 px-11.5 flex flex-row justify-between w-full bg-transparent">
+  <body class="bg-orange-400 flex flex-col selection:bg-pink-300 selection:text-gray-700">
+    <header class="fixed w-full mt-12 z-10">
+      <ul class="py-0.5 px-11.5 flex flex-row justify-between w-full bg-transparent z-10">
         <li>
-          <button class="font-extrabold h-12 w-12 cursor-pointer text-amber-50">
-            TFL
+          <button id="four-of" class="font-extrabold h-12 w-12 text-4xl cursor-pointer text-amber-50">
+            IV
           </button> 
         </li>
         <li>
-          <button class="rotate-90 font-extrabold h-12 w-12 cursor-pointer text-amber-50">
-            II
-          </button> 
+          <button id="side-menu-button" onclick="side_menu()" class="hover:text-amber-100 rotate-90 font-extrabold h-12 w-12 text-4xl cursor-pointer text-amber-50">
+            ii
+          </button>
+          <script>
+            function side_menu() {
+              menu = document.getElementById('side-menu');
+              four = document.getElementById('four-of');
+              menu_icon = document.getElementById('side-menu-button');
+              close_icon = 'x';
+              default_icon = 'ii'
+
+                if (menu_icon.innerHTML == close_icon) {
+                  menu_icon.innerHTML = default_icon;
+                  menu.style.display = 'none';
+                  four.innerHTML = 'IV';
+                }
+                else {
+                   menu_icon.innerHTML = close_icon;
+                   menu.style.display = 'block';
+                   four.innerHTML = '';
+                }
+            }
+          </script> 
         </li>
       </ul>
     </header>
-    <div class="py-5 px-11.5 h-screen w-full bg-blue-300 bg-blend-soft-light text-amber-50 flex justify-center items-center">
-      <h1 class="font-extrabold ">The <br> &nbsp&nbsp Four <br> &nbsp Lords</h1>
+    <div id="side-menu" class="hidden bg-gray-950 text-amber-50 h-screen ml-20 md:ml-96 w-screen fixed z-0">
+      <ul class="flex flex-col pl-10 mt-30">
+        <li class=""><h4 class="text-gray-400 text-2xl py-3">PETS</h4></li>
+        <li class="hover:text-amber-100"><h1 class="font-extrabold text-4xl py-1 uppercase cursor-pointer">Tteok bokki</h1></li>
+        <li class="hover:text-amber-100"><h1 class="font-extrabold text-4xl py-1 uppercase cursor-pointer">Lucis Caelum</h1></li>
+        <li class="hover:text-amber-100"><h1 class="font-extrabold text-4xl py-1 uppercase cursor-pointer">Azdaya</h1></li>
+        <li class="hover:text-amber-100"><h1 class="font-extrabold text-4xl py-1 uppercase cursor-pointer">Tortellini</h1></li>
+      </ul>
     </div>
-    <div class="py-25 px-14 md:py-40 md:px-46 flex flex-col flex-1 h-fit w-full bg-blue-950 text-amber-50">
-      <h2 class="text-fuchsia-400 font-extrabold">Identity</h2>
-      <p class="text-fuchsia-400 font-extrabold">
+    <div class="py-5 px-11.5 h-screen w-full bg-blue-300 text-amber-50 flex justify-center items-center">
+      <h1 class="font-extrabold text-5xl">The Four</h1>
+    </div>
+    <div class="py-25 px-14 md:py-40 md:px-46 flex flex-col flex-1 h-fit w-full bg-gray-900 text-amber-50">
+      <h2 class="text-pink-500 font-extrabold text-4xl">Background</h2>
+      <p class="text-pink-500 text-2xl py-10">
         Non excepturi corrupti fuga repudiandae eum cumque et esse. Ea voluptate aut delectus aut. Nobis asperiores inventore quia.
         Aliquam quia nulla sunt et odio magni excepturi suscipit. Voluptatibus impedit inventore voluptatem quo consectetur. Sed quo est veniam explicabo harum.
-        Et est quas similique voluptas quibusdam dolorem est et. Veniam omnis minima quisquam enim quo voluptate quod. Consectetur quibusdam sint modi itaque enim tempora et.
       </p>
     </div>
-    <div class="py-25 px-14 md:py-40 md:px-46 flex flex-col flex-1 h-fit w-full bg-blue-800">
-      <h2 class="h-80 text-amber-200 font-extrabold">NAME</h2>
-      <h3 class="text-fuchsia-400 font-extrabold">Snippet</h3>
-      <p class="text-amber-50 font-extrabold">
-        Non excepturi corrupti fuga repudiandae eum cumque et esse. Ea voluptate aut delectus aut. Nobis asperiores inventore quia.
-        Aliquam quia nulla sunt et odio magni excepturi suscipit. Voluptatibus impedit inventore voluptatem quo consectetur. Sed quo est veniam explicabo harum.
-        Et est quas similique voluptas quibusdam dolorem est et. Veniam omnis minima quisquam enim quo voluptate quod. Consectetur quibusdam sint modi itaque enim tempora et.
-      </p>
-    </div>
-    <div class="py-25 px-14 md:py-40 md:px-46 flex flex-col flex-1 h-fit w-full bg-blue-700">
-      <h2 class="h-80 text-amber-200 font-extrabold">QUOTE</h2>
-      <h3 class="text-fuchsia-400 font-extrabold">Activities</h3>
-      <p class="text-amber-50 font-extrabold">
-        Non excepturi corrupti fuga repudiandae eum cumque et esse. Ea voluptate aut delectus aut. Nobis asperiores inventore quia.
-        Aliquam quia nulla sunt et odio magni excepturi suscipit. Voluptatibus impedit inventore voluptatem quo consectetur. Sed quo est veniam explicabo harum.
-        Et est quas similique voluptas quibusdam dolorem est et. Veniam omnis minima quisquam enim quo voluptate quod. Consectetur quibusdam sint modi itaque enim tempora et.
-      </p>
-    </div>
+    <section class="flex flex-col h-fit bg-no-repeat bg-cover bg-center" style="background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.explicit.bing.net%2Fth%2Fid%2FOIP.TGwj9IoofOYbjA9GM8KQGgHaEo%3Fpid%3DApi&f=1&ipt=5d941f06a1dc98d412909c7fd438a18aabaf2ed12cdb7ff01d0eb325b4a6ff97);">
+      <div class="w-screen h-screen"></div>
+      <div class="px-21 md:px-46 h-fit w-full md:w-screen flex flex-col justify-end md:bg-gray-950 md:pt-24 bg-transparent">
+        <h2 class="text-amber-200 font-extrabold text-6xl uppercase">
+          Tteok bokki
+        </h2>
+      </div>
+    </section>
+      
+    <section class="bg-gray-950 flex flex-col md:flex-row md:flex-1/2 h-fit md:flex-wrap overflow-hidden gap-4 pb-40">
+      <div class=" md:w-1/3 px-21 md:px-46 flex flex-col flex-1 h-fit w-full">
+        <h3 class="text-pink-300 font-bold text-4xl py-10 pr-12 max-w-sm">
+          Only wanted to be the best boy, no matter the cost.
+        </h3>
+        <p class="text-white text-2xl pr-12 max-w-sm">
+          Non excepturi corrupti fuga repudiandae eum cumque et esse. Ea voluptate aut delectus aut. Nobis asperiores inventore quia.
+        </p>
+      </div>
+      <div class="bg-red-500 mt-20 w-full h-100 md:w-1/2 md:h-screen hover:border-4"></div>
 
-    <footer class="text-center bg-blue-950 text-amber-50">
+        <div class="flex flex-row border-2 w-fit ml-24 md:w-screen gap-x-4">
+          <div class="bg-green-500 w-90 md:w-1/3 h-screen hover:border-4"></div>
+          <div class="bg-blue-500 w-90 h-screen md:w-1/3 md:h-100 hover:border-4"></div>
+        </div>
+    </section>
+
+    <section class="flex flex-col h-fit bg-no-repeat bg-cover bg-center" style="background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fanimalso.com%2Fwp-content%2Fuploads%2F2017%2F01%2Fgerman-shepherd-puppies_3.jpg&f=1&nofb=1&ipt=686d3bb8918b0c5aacac237d03f0170c234bfadcb742d8c2db3399c790fcc277);">
+      <div class="w-screen h-screen"></div>
+      <div class="px-21 md:px-46 h-fit w-full md:w-screen flex flex-col justify-end md:bg-gray-950 md:pt-24 bg-transparent">
+        <h2 class="text-amber-200 font-bold text-6xl uppercase">
+         "pupu wiwi, nyam nyam, gubboy"
+        </h2>
+      </div>
+    </section>
+
+    <section class="hidden">
+    <div class="py-25 px-14 md:py-40 md:px-46 flex flex-col flex-1 h-fit w-full bg-gray-900">
+      <div class="h-fit w-full flex flex-col justify-end bg-green-900 pr-20">
+        <h2 class="text-amber-200 font-bold text-6xl py-18">"Poopoo-weewee, nyam-nyam"</h2>
+      </div>
+      <h3 class="text-pink-300 font-extrabold text-3xl py-10 pr-12">Activities</h3>
+      <p class="text-white text-2xl">
+        Non excepturi corrupti fuga repudiandae eum cumque et esse. Ea voluptate aut delectus aut. Nobis asperiores inventore quia.
+        Aliquam quia nulla sunt et odio magni excepturi suscipit. Voluptatibus impedit inventore voluptatem quo consectetur. Sed quo est veniam explicabo harum.
+      </p>
+    </div>
+    </section>
+
+    <footer class="text-center bg-gray-900 text-amber-50">
       <div class="h-screen"></div>
       <p class="font-light">jacob.cajipo@2025</p>
       <div class="h-20"></div>
