@@ -10,17 +10,17 @@
 <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>The Pets</title>
   </head>
-  <body class="bg-orange-400 flex flex-col selection:bg-pink-300 selection:text-gray-700">
-    <header class="fixed w-full mt-12 z-10">
+  <body class="scroll-smooth bg-black flex flex-col selection:bg-pink-300 selection:text-gray-700">
+    <header class="fixed w-full mt-12 z-20">
       <ul class="py-0.5 px-11.5 flex flex-row justify-between w-full bg-transparent z-10">
         <li>
-          <button id="four-of" class="font-extrabold h-12 w-12 text-4xl cursor-pointer text-amber-50">
-            IV
+          <button id="four-of" class="font-extrabold h-12 w-12 text-5xl cursor-pointer text-amber-50">
+            V
           </button> 
         </li>
         <li>
-          <button id="side-menu-button" onclick="side_menu()" class="hover:text-amber-100 rotate-90 font-extrabold h-12 w-12 text-4xl cursor-pointer text-amber-50">
-            ii
+          <button id="side-menu-button" onclick="side_menu()" class="hover:text-amber-100 rotate-90 font-extrabold h-12 w-12 text-5xl cursor-pointer text-amber-50">
+            II
           </button>
           <script>
             function side_menu() {
@@ -28,15 +28,21 @@
               four = document.getElementById('four-of');
               menu_icon = document.getElementById('side-menu-button');
               close_icon = 'x';
-              default_icon = 'ii'
+              default_icon = 'II'
 
                 if (menu_icon.innerHTML == close_icon) {
                   menu_icon.innerHTML = default_icon;
+                  menu_icon.style.borderRadius = '0';
+                 
+                  
                   menu.style.display = 'none';
-                  four.innerHTML = 'IV';
+                  four.innerHTML = 'V';
                 }
                 else {
                    menu_icon.innerHTML = close_icon;
+                   menu_icon.style.borderRadius = '100px';
+                   
+                  
                    menu.style.display = 'block';
                    four.innerHTML = '';
                 }
@@ -45,58 +51,160 @@
         </li>
       </ul>
     </header>
-    <div id="side-menu" class="hidden bg-gray-950 text-amber-50 h-screen ml-20 md:ml-96 w-screen fixed z-0">
+    
+    <!--HIDDEN MENU--><div id="side-menu" class="hidden bg-black text-amber-50 h-screen ml-20 md:ml-96 w-screen md:w-1/2 top-0 right-0 fixed z-10">
       <ul class="flex flex-col pl-10 mt-30">
-        <li class=""><h4 class="text-gray-400 text-2xl py-3">PETS</h4></li>
+        <li class=""><h4 class="text-gray-400 text-2xl py-3 uppercase">The Padawans</h4></li>
         <li class="hover:text-amber-100"><h1 class="font-extrabold text-4xl py-1 uppercase cursor-pointer">Tteok bokki</h1></li>
         <li class="hover:text-amber-100"><h1 class="font-extrabold text-4xl py-1 uppercase cursor-pointer">Lucis Caelum</h1></li>
-        <li class="hover:text-amber-100"><h1 class="font-extrabold text-4xl py-1 uppercase cursor-pointer">Azdaya</h1></li>
-        <li class="hover:text-amber-100"><h1 class="font-extrabold text-4xl py-1 uppercase cursor-pointer">Tortellini</h1></li>
+        <li class="hover:text-amber-100"><h1 class="font-extrabold text-4xl py-1 uppercase cursor-pointer">vrtra Azdaya</h1></li>
+        <li class="hover:text-amber-100"><h1 class="font-extrabold text-4xl py-1 uppercase cursor-pointer">Latinus makinus</h1></li>
+        <li class="hover:text-amber-100"><h1 class="font-extrabold text-4xl py-1 uppercase cursor-pointer">Torta Materinni</h1></li>
       </ul>
+      <a href="https://rancor.netlify.app/">
+      <button class="w-full cursor-pointer hover:bg-white hover:text-black bg-red-600 px-15 py-5 right-0 bottom-10 absolute">
+        EXIT
+      </button>
+      </a>
     </div>
-    <div class="py-5 px-11.5 h-screen w-full bg-blue-300 text-amber-50 flex justify-center items-center">
-      <h1 class="font-extrabold text-5xl">The Four</h1>
+    <!--HERO--><div id="hero" class="bg-fixed mask-t-from-75% mask-t-from-gray-950 bg-no-repeat bg-cover md:bg-contain bg-center py-5 px-11.5 h-screen w-full text-amber-50 flex justify-center items-center"
+    style="
+    background-image: url(
+https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.giphy.com%2Fmedia%2Fjt8Nt24ZieiSSHD6A5%2Fgiphy.gif&f=1&nofb=1&ipt=5a31d50a9cf72778bacd74630f578b19907cebed404ea58eb3955101d35231e5
+)
+">
+      <h1 class="font-extrabold text-8xl text-center">The <br> Rebel <br> Five</h1>
     </div>
-    <div class="py-25 px-14 md:py-40 md:px-46 flex flex-col flex-1 h-fit w-full bg-gray-900 text-amber-50">
-      <h2 class="text-pink-500 font-extrabold text-4xl">Background</h2>
-      <p class="text-pink-500 text-2xl py-10">
-        Non excepturi corrupti fuga repudiandae eum cumque et esse. Ea voluptate aut delectus aut. Nobis asperiores inventore quia.
-        Aliquam quia nulla sunt et odio magni excepturi suscipit. Voluptatibus impedit inventore voluptatem quo consectetur. Sed quo est veniam explicabo harum.
+    <!--Summary--><div class="bg-fixed text-center text-amber-300 py-50 px-14 md:py-40 md:px-46 flex flex-col flex-1 h-fit w-full text-amber-50"
+    style="background-image: url(
+https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fe1.pxfuel.com%2Fdesktop-wallpaper%2F398%2F985%2Fdesktop-wallpaper-star-field-starwars-background.jpg&f=1&nofb=1&ipt=915777f3eba9eda93e4e7d7bcef045ca4ba95c1456d67fd7242fbdb77c8f6b59    );"
+    >
+      <h2 class="font-extrabold text-4xl">The Story, So Far.</h2>
+      <p class="text-2xl py-10">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+<br> <br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
     </div>
-    <section class="flex flex-col h-fit bg-no-repeat bg-cover bg-center" style="background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.explicit.bing.net%2Fth%2Fid%2FOIP.TGwj9IoofOYbjA9GM8KQGgHaEo%3Fpid%3DApi&f=1&ipt=5d941f06a1dc98d412909c7fd438a18aabaf2ed12cdb7ff01d0eb325b4a6ff97);">
+    <!--The Padawans--><div class="py-50 px-14 md:py-40 md:px-46 flex flex-col flex-1 h-fit w-full text-amber-50">
+      <h2 class="font-extrabold text-4xl">The Padawans</h2>
+      <p class="text-2xl py-10">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+<br> <br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </div>
+    <!--Tteokbokki hero--><section class="z-0 mask-b-from-gray-900 flex flex-col h-fit bg-no-repeat bg-cover bg-center bg-fixed" 
+    style="
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.ukgermanshepherdrescue.co.uk%2Fassets%2Fimages%2Fmbr-3-1920x1285.jpeg&f=1&nofb=1&ipt=d6e4e4e4757eb98006c19c7a30deded60cbfb93da5b1fc959cc14140ad93b5cb);
+    ">
       <div class="w-screen h-screen"></div>
-      <div class="px-21 md:px-46 h-fit w-full md:w-screen flex flex-col justify-end md:bg-gray-950 md:pt-24 bg-transparent">
-        <h2 class="text-amber-200 font-extrabold text-6xl uppercase">
+      <div class="w-screen h-screen"></div>
+    </section>
+    <!--Tteokbokki Logo-->  <div class="px-21 md:px-46 h-fit w-full md:w-screen flex flex-col justify-end md:pt-24 bg-transparent">
+        <h2 class="text-amber-100 font-bold text-7xl uppercase">
           Tteok bokki
         </h2>
       </div>
-    </section>
-      
-    <section class="bg-gray-950 flex flex-col md:flex-row md:flex-1/2 h-fit md:flex-wrap overflow-hidden gap-4 pb-40">
-      <div class=" md:w-1/3 px-21 md:px-46 flex flex-col flex-1 h-fit w-full">
-        <h3 class="text-pink-300 font-bold text-4xl py-10 pr-12 max-w-sm">
+    <!--Tteokbokki Desc--><section class="flex flex-col md:flex-row md:flex-1/2 h-fit md:flex-wrap overflow-scroll gap-4 pb-10 mb-30">
+      <div class="md:w-1/3 px-21 md:px-46 flex flex-col flex-1 h-fit w-full">
+        <h3 class="text-yellow-500 font-bold text-4xl py-10 max-w-sm">
           Only wanted to be the best boy, no matter the cost.
         </h3>
-        <p class="text-white text-2xl pr-12 max-w-sm">
+        <p class="text-white text-2xl">
           Non excepturi corrupti fuga repudiandae eum cumque et esse. Ea voluptate aut delectus aut. Nobis asperiores inventore quia.
         </p>
       </div>
-      <div class="bg-red-500 mt-20 w-full h-100 md:w-1/2 md:h-screen hover:border-4"></div>
+      <div class="cursor-zoom-in bg-red-500 mt-20 w-full h-100 md:w-1/2 md:h-screen hover:border-4"
+      style="background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.9t1jACL7uxLHwf4S3wEf1gHaEo%3Fpid%3DApi&f=1&ipt=f5cbd992cfb4069e3e0e34582ae20b6f6205548c9f6f5b76227429140ab6610d&ipo=images);
+      background-repeat: no-repeat; background-size: cover;
+      "></div>
 
-        <div class="flex flex-row border-2 w-fit ml-24 md:w-screen gap-x-4">
-          <div class="bg-green-500 w-90 md:w-1/3 h-screen hover:border-4"></div>
-          <div class="bg-blue-500 w-90 h-screen md:w-1/3 md:h-100 hover:border-4"></div>
+        <div class="px-21 flex flex-row w-fit ml-10 md:w-screen gap-x-4 overflow-scroll">
+          <div class="cursor-zoom-in bg-green-500 w-80 md:w-1/3 h-screen hover:border-4"
+          style="background-image: url(https://mcdn.wallpapersafari.com/medium/92/58/h5SX9r.jpg);
+          background-repeat: no-repeat; background-size: cover; background-position: center;"></div>
+          <div class="cursor-zoom-in bg-blue-500 w-80 h-screen md:w-1/3 md:h-100 hover:border-4"
+          style="background-image: url(https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fcdn.wallpapersafari.com%2F59%2F80%2FCs3PoI.jpg&f=1&nofb=1&ipt=5f4eb69bdbd659b7cce041d311049229de3a092408d3801cecc84182b5c7202f);
+          background-repeat: no-repeat; background-size: cover; background-position: center;"></div>
+        </div>
+    </section>
+    <!--Lucis Caelum hero--><section class="z-0 mask-b-from-gray-900 flex flex-col h-fit bg-no-repeat bg-cover bg-center bg-fixed" 
+    style="
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapers.com%2Fimages%2Ffile%2Fblack-cat-pictures-uatrkx2f62c522zs.jpg&f=1&nofb=1&ipt=e31fc5ff5186ba9eea183daaa1edd71a85978b8ed6c46efc384c94663d70c3a3);
+    ">
+      <div class="w-screen h-screen"></div>
+      <div class="w-screen h-screen"></div>
+    </section>
+    <!--Lucis Caelum logo--><div class="px-21 md:px-46 h-fit w-full md:w-screen flex flex-col justify-end md:pt-24 bg-transparent">
+        <h2 class="text-amber-100 font-bold text-7xl uppercase">
+          Lucis Caelum
+        </h2>
+      </div>
+    <!--Lucis Caelum desc--><section class="flex flex-col md:flex-row md:flex-1/2 h-fit md:flex-wrap overflow-scroll gap-4 pb-10 mb-30">
+      <div class="md:w-1/3 px-21 md:px-46 flex flex-col flex-1 h-fit w-full">
+        <h3 class="text-red-500 font-bold text-4xl py-10 max-w-sm">
+          It actually takes an effort to dislike everybody equally.
+        </h3>
+        <p class="text-white text-2xl">
+          Non excepturi corrupti fuga repudiandae eum cumque et esse. Ea voluptate aut delectus aut. Nobis asperiores inventore quia.
+        </p>
+      </div>
+      <div class="cursor-zoom-in bg-red-500 mt-20 w-full h-100 md:w-1/2 md:h-screen hover:border-4"
+      style="background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.rover.com%2Fblog%2Fwp-content%2Fuploads%2Fblack-cat-min-e1680636929915.jpg&f=1&nofb=1&ipt=d1f708fa9732522aa0724921fa421a648c8089edc9a553e1aefc512074b4ecdf);
+      background-repeat: no-repeat; background-size: cover;
+      "></div>
+
+        <div class="px-21 flex flex-row w-fit ml-10 md:w-screen gap-x-4 overflow-scroll">
+          <div class="cursor-zoom-in bg-green-500 w-80 md:w-1/3 h-screen hover:border-4"
+          style="background-image: url(https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fgetwallpapers.com%2Fwallpaper%2Ffull%2F4%2F5%2F6%2F706621-black-cat-wallpapers-1440x2560-for-mobile-hd.jpg&f=1&nofb=1&ipt=348f397878f06cb88c1366ebb3d571a228b4e103e7d5aff090a9f66eeea73201);
+          background-repeat: no-repeat; background-size: cover; background-position: center;"></div>
+          <div class="cursor-zoom-in bg-blue-500 w-80 h-screen md:w-1/3 md:h-100 hover:border-4"
+          style="background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.warrenphotographic.co.uk%2Fphotography%2Fbigs%2F21585-Black-cat-white-background.jpg&f=1&nofb=1&ipt=4188624d80f400d30547176fdace1d93cc52f06cf49ff8e1121c7e882001651f);
+          background-repeat: no-repeat; background-size: cover; background-position: center;"></div>
         </div>
     </section>
 
-    <section class="flex flex-col h-fit bg-no-repeat bg-cover bg-center" style="background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fanimalso.com%2Fwp-content%2Fuploads%2F2017%2F01%2Fgerman-shepherd-puppies_3.jpg&f=1&nofb=1&ipt=686d3bb8918b0c5aacac237d03f0170c234bfadcb742d8c2db3399c790fcc277);">
+        <!--Azdaya hero--><section class="z-0 mask-b-from-gray-900 flex flex-col h-fit bg-no-repeat bg-cover bg-center bg-fixed" 
+    style="
+    background-image: url(
+https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpreview.redd.it%2Fmeet-tilapia-v0-oq7yk0975twa1.jpg%3Fwidth%3D1080%26crop%3Dsmart%26auto%3Dwebp%26s%3D6c0ecea6efe8074377bafb7375b50c104b546fbb&f=1&nofb=1&ipt=880f4147fa63c5c72736ddc061e29ab8b2ff09e750d09a34532695f96f571dcb
+      )
+      ;
+    ">
       <div class="w-screen h-screen"></div>
-      <div class="px-21 md:px-46 h-fit w-full md:w-screen flex flex-col justify-end md:bg-gray-950 md:pt-24 bg-transparent">
-        <h2 class="text-amber-200 font-bold text-6xl uppercase">
-         "pupu wiwi, nyam nyam, gubboy"
+      <div class="w-screen h-screen"></div>
+    </section>
+    <!--Azdaya logo--><div class="px-21 md:px-46 h-fit w-full md:w-screen flex flex-col justify-end md:pt-24 bg-transparent">
+        <h2 class="text-amber-100 font-bold text-7xl uppercase">
+          Vrtra Azdaya
         </h2>
       </div>
+    <!--Azdaya Caelum desc--><section class="flex flex-col md:flex-row md:flex-1/2 h-fit md:flex-wrap overflow-scroll gap-4 pb-10 mb-30">
+      <div class="md:w-1/3 px-21 md:px-46 flex flex-col flex-1 h-fit w-full">
+        <h3 class="text-green-500 font-bold text-4xl py-10 max-w-sm">
+          Have courage and be kind.
+        </h3>
+        <p class="text-white text-2xl">
+          Non excepturi corrupti fuga repudiandae eum cumque et esse. Ea voluptate aut delectus aut. Nobis asperiores inventore quia.
+        </p>
+      </div>
+      <div class="cursor-zoom-in bg-red-500 mt-20 w-full h-100 md:w-1/2 md:h-screen hover:border-4"
+      style="background-image: url(
+https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpetvarsity.com%2Fwp-content%2Fuploads%2F2024%2F01%2FOmega-3-Fatty-Acids-and-Their-Benefits.webp&f=1&nofb=1&ipt=82c28d64115a7ba4b0ca62418f3bccaf8047a218002b08c930a4db434e985c37
+        );
+      background-repeat: no-repeat; background-size: cover;
+      "></div>
+
+        <div class="px-21 flex flex-row w-fit ml-10 md:w-screen gap-x-4 overflow-scroll">
+          <div class="cursor-zoom-in bg-green-500 w-80 md:w-1/3 h-screen hover:border-4"
+          style="background-image: url(
+https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpreview.redd.it%2Fthis-mingming-in-antipolo-market-v0-jur2sd5fj72c1.jpg%3Fwidth%3D1080%26crop%3Dsmart%26auto%3Dwebp%26s%3D4b6ec049351ce80e33885d8386384545adbcb543&f=1&nofb=1&ipt=6865bd5fe68dbff10359e62a6e6c1a7bcb130fc24d94b4b402ba33bac9d24058            );
+          background-repeat: no-repeat; background-size: cover; background-position: center;"></div>
+          <div class="cursor-zoom-in bg-blue-500 w-80 h-screen md:w-1/3 md:h-100 hover:border-4"
+          style="background-image: url(
+https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flookaside.fbsbx.com%2Flookaside%2Fcrawler%2Fmedia%2F%3Fmedia_id%3D1028634089360943&f=1&nofb=1&ipt=76afc296d36da5d2b7ae73dde1105b7ea975cbb47d0cfb0c782518a0b840cd4b
+          );
+          background-repeat: no-repeat; background-size: cover; background-position: center;"></div>
+        </div>
     </section>
 
     <section class="hidden">
@@ -112,7 +220,7 @@
     </div>
     </section>
 
-    <footer class="text-center bg-gray-900 text-amber-50">
+    <footer class="text-center text-amber-50">
       <div class="h-screen"></div>
       <p class="font-light">jacob.cajipo@2025</p>
       <div class="h-20"></div>
