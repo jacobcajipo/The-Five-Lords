@@ -67,16 +67,16 @@
     </aside>
 
     <main>
-    <!--HERO--><div id="hero" class="bg-right bg-no-repeat bg-cover py-5 px-11.5 h-screen w-full text-amber-50 flex flex-col justify-center items-center"
+    <!--HERO--><div id="hero" class="mask-t-from-85% mask-t-from-gray-900 mask-b-from-75% bg-right bg-no-repeat bg-cover py-5 px-11.5 h-screen w-full text-amber-50 flex flex-col justify-center items-center"
     style="background-image: url(
 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmir-s3-cdn-cf.behance.net%2Fproject_modules%2Fmax_1200%2Fdece5f124024167.60fb03546918b.gif&f=1&nofb=1&ipt=a494fbe811886ff871bbfe2d322b03f3ca926c39d859903bd90aa5ea957fa73e'
 );
 ">
       <h1 class="font-extrabold text-8xl">Ten- <br> Pair <br> Paws </h1>
     </div>
-    <aside class="flex justify-center align-middle items-center w-full h-20 bg-transparent fixed bottom-2.5 z-5">
+    <aside class="text-amber-300 flex justify-center align-middle items-center w-full h-50 bg-transparent sticky bottom-2.5 z-5">
       <div>
-        <button onclick="show_demo()" class="cursor-pointer bg-amber-500 uppercase p-2 text-amber-50">
+        <button onclick="show_demo()" class="animate-pulse uppercase w-full cursor-pointer hover:bg-white hover:text-black bg-red-600 px-15 py-5">
           Play Demo
         </button>
         <script>
@@ -93,7 +93,7 @@
         </script>
       </div>
       <div id="demo_module" class="bg-gray-950 flex-col justify-center align-middle items-center hidden fixed w-screen h-screen top-0 z-50">
-        <div class="w-3/4 h-3/4 bg-amber-950">
+        <div class="w-3/4 h-3/4 bg-amber-950 z-50">
           <iframe src="https://rancor.netlify.app/pico8/adventure" frameborder="1" width="100%" height="100%">
           </iframe>
           </div>
@@ -102,30 +102,33 @@
         </button>
       </div>
     </aside>
+   
     
-    <!--Story Overview--><div class="bg-fixed text-center text-amber-300 py-50 px-14 md:py-40 md:px-46 flex flex-col flex-1 h-fit w-full"
+    <!--Story Overview--><div class="mask-t-from-95% mask-t-from-gray-900 mask-b-from-95% mask-b-from-gray-900 bg-no-repeat bg-cover text-center text-white py-50 px-14 md:py-40 md:px-46 flex flex-col flex-1 h-fit w-full"
     style="background-image: url(
-https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fe1.pxfuel.com%2Fdesktop-wallpaper%2F398%2F985%2Fdesktop-wallpaper-star-field-starwars-background.jpg&f=1&nofb=1&ipt=915777f3eba9eda93e4e7d7bcef045ca4ba95c1456d67fd7242fbdb77c8f6b59    );"
+https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmir-s3-cdn-cf.behance.net%2Fproject_modules%2Fmax_1200%2F641c2b170466977.645e34a7760bf.gif&f=1&nofb=1&ipt=ef0a8ce3b096951271dbb38b4cb6ff0769e8ca78e9955093dab0fe016b43db84    );"
     >
-      <h2 class="font-extrabold text-4xl">The Story, So Far.</h2>
-      <p class="py-10">
+      <h2 class="pt-10 px-3 font-extrabold text-4xl bg-[rgba(0,0,0,.85)]">The Story, So Far.</h2>
+      <p class="py-10 px-3 mb-10 bg-[rgba(0,0,0,.85)]">
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
 <br> <br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
-       <button class="animate-pulse uppercase w-full cursor-pointer hover:bg-white hover:text-black bg-red-600 px-15 py-5">
-        Read More
+       <button class="uppercase w-full cursor-pointer hover:bg-white hover:text-black bg-red-600 px-15 py-5">
+        Read LORE
       </button>
     </div>
-    <!--The Warriors--><div class="m-1  py-50 px-13 md:py-40 md:px-46 flex flex-col flex-1 h-fit w-auto text-amber-50">
-      <h2 class="font-extrabold text-4xl">The Knights</h2>
-      <p class="py-10">
+    <!--The Warriors--><div class="bg-black bg-no-repeat bg-cover bg-center text-center text-white py-50 px-14 md:py-40 md:px-46 flex flex-col flex-1 h-fit w-full"
+   >
+      <h2 class="pt-10 px-3 font-extrabold text-4xl bg-[rgba(0,0,0,.85)]">The Knights</h2>
+      <p class="py-10 px-3 mb-10 bg-[rgba(0,0,0,.85)]">
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+<br> <br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
-      <button class="animate-pulse text-amber-300 uppercase w-full cursor-pointer hover:bg-white hover:text-black bg-red-600 px-15 py-5">
+      <button class="uppercase w-full cursor-pointer hover:bg-white hover:text-black bg-red-600 px-15 py-5">
         Read More
       </button>
     </div>
-    <!--Tteokbokki hero--><section class="z-0 mask-b-from-50% mask-b-from-gray-900 flex flex-col h-fit bg-no-repeat bg-cover bg-center bg-fixed" 
+    <!--Tteokbokki hero--><section class="z-0 mask-t-from-95% mask-t-from-gray-900 mask-b-from-50% mask-b-from-gray-900 flex flex-col h-fit bg-no-repeat bg-cover bg-center bg-fixed" 
     style="
     background-image: url(https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.ukgermanshepherdrescue.co.uk%2Fassets%2Fimages%2Fmbr-3-1920x1285.jpeg&f=1&nofb=1&ipt=d6e4e4e4757eb98006c19c7a30deded60cbfb93da5b1fc959cc14140ad93b5cb);
     ">
@@ -158,7 +161,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
           background-repeat: no-repeat; background-size: cover; background-position: center;"></div>
         </div>
     </section>
-    <!--Lucis Caelum hero--><section class="z-0 mask-b-from-50% mask-b-from-gray-900 flex flex-col h-fit bg-no-repeat bg-cover bg-center bg-fixed" 
+    <!--Lucis Caelum hero--><section class="z-0 mask-t-from-95% mask-t-from-gray-900 mask-b-from-50% mask-b-from-gray-900 flex flex-col h-fit bg-no-repeat bg-cover bg-center bg-fixed" 
     style="
     background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapers.com%2Fimages%2Ffile%2Fblack-cat-pictures-uatrkx2f62c522zs.jpg&f=1&nofb=1&ipt=e31fc5ff5186ba9eea183daaa1edd71a85978b8ed6c46efc384c94663d70c3a3);
     ">
@@ -193,7 +196,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
         </div>
     </section>
 
-    <!--Azdaya hero--><section class="z-0 mask-b-from-50% mask-b-from-gray-900 flex flex-col h-fit bg-no-repeat bg-cover bg-center bg-fixed" 
+    <!--Azdaya hero--><section class="z-0 mask-t-from-95% mask-t-from-gray-900 mask-b-from-50% mask-b-from-gray-900 flex flex-col h-fit bg-no-repeat bg-cover bg-center bg-fixed" 
     style="
     background-image: url(
 https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpreview.redd.it%2Fmeet-tilapia-v0-oq7yk0975twa1.jpg%3Fwidth%3D1080%26crop%3Dsmart%26auto%3Dwebp%26s%3D6c0ecea6efe8074377bafb7375b50c104b546fbb&f=1&nofb=1&ipt=880f4147fa63c5c72736ddc061e29ab8b2ff09e750d09a34532695f96f571dcb
@@ -235,24 +238,16 @@ https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flookaside.fbsbx.com%
           background-repeat: no-repeat; background-size: cover; background-position: center;"></div>
         </div>
     </section>
-
-    <section class="hidden">
-    <div class="py-25 px-14 md:py-40 md:px-46 flex flex-col flex-1 h-fit w-full bg-gray-900">
-      <div class="h-fit w-full flex flex-col justify-end bg-green-900 pr-20">
-        <h2 class="text-amber-200 font-bold text-6xl py-18">"Poopoo-weewee, nyam-nyam"</h2>
-      </div>
-      <h3 class="text-pink-300 font-extrabold text-3xl py-10 pr-12">Activities</h3>
-      <p class="text-white text-2xl">
-        Non excepturi corrupti fuga repudiandae eum cumque et esse. Ea voluptate aut delectus aut. Nobis asperiores inventore quia.
-        Aliquam quia nulla sunt et odio magni excepturi suscipit. Voluptatibus impedit inventore voluptatem quo consectetur. Sed quo est veniam explicabo harum.
-      </p>
+    <div class="flex flex-col justify-center items-center h-screen">
+        <button onclick="show_demo()" class="text-amber-300 animate-pulse uppercase w-fit cursor-pointer hover:bg-white hover:text-black bg-red-600 px-15 py-5">
+          Play Demo
+        </button>
     </div>
-    </section>
-
     </main>
 
     <footer class="text-center text-amber-50">
-      <div class="h-screen"></div>
+      <div class="h-1/2">
+      </div>
       <p class="font-light">jacob.cajipo@2025</p>
       <div class="h-20"></div>
     </footer>
