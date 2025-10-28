@@ -1,12 +1,21 @@
 @import "tailwindcss";
 
-@layer base {
-    body {
-        font-family: "Work Sans", sans-serif;
-        font-size: large;
-    }
+html {
+  scroll-behavior: smooth;
 }
 
+@theme {
+  --default-font-family: "Work Sans", sans-serif;
+}
+
+@layer base {
+    body {
+        font-size: large;
+    }
+    p {
+        color: white;
+    }
+}
 .work-sans-pets-600 {
   font-family: "Work Sans", sans-serif;
   font-optical-sizing: auto;
