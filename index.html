@@ -37,12 +37,14 @@
                   menu_icon.style.borderRadius = '0';
                   menu.style.display = 'none';
                   four.innerHTML = 'V';
+                  document.getElementsByTagName('main')[0].style.filter = 'none';
                 }
                 else {
                    menu_icon.innerHTML = close_icon;
                    menu_icon.style.borderRadius = '100px';
                    menu.style.display = 'block';
                    four.innerHTML = '';
+                   document.getElementsByTagName('main')[0].style.filter = 'blur(100px)';
                 }
             }
           </script> 
@@ -50,8 +52,8 @@
       </ul>
     </header>
     
-    <aside id="side-menu" class="flex-col h-screen hidden">
-    <div class="bg-black h-screen text-amber-50 ml-20 md:ml-96 w-screen md:w-1/2 top-0 right-0 fixed z-10">
+    <aside id="side-menu" class="transition-all delay-75 duration-75 ease-in-out flex-col h-screen hidden">
+    <div class="bg-[rgba(5,5,5,.9)] h-screen text-amber-50 ml-20 md:ml-96 w-5/6 md:w-1/2 top-0 right-0 fixed z-10">
       <ul class="flex flex-col pl-10 mt-30">
         <li class=""><h4 class="text-gray-400 text-2xl py-3 uppercase">Knights</h4></li>
         <li class="hover:text-amber-100"><h1 class="font-extrabold text-4xl py-1"><a href="#bokki"><button onclick="side_menu();" class="uppercase cursor-pointer">Tteok bokki</button></a></h1></li>
@@ -59,8 +61,12 @@
         <li class="hover:text-amber-100"><h1 class="font-extrabold text-4xl py-1"><a href="#asha"><button onclick="side_menu();" class="uppercase cursor-pointer">Vrtra Azdaya</button></a></h1></li>
         <li class="hover:text-amber-100"><h1 class="font-extrabold text-4xl py-1"><a href="#tortol"><button onclick="side_menu();" class="uppercase cursor-pointer">Kachow + Mater</button></a></h1></li>
       </ul>
+      <ul class="py-5 flex flex-row pl-10 bg-black w-full overscroll-x-auto gap-2 right-0 bottom-[100px] absolute">
+        <li><h4 class="text-black text-2xl px-5 py-3 uppercase bg-amber-50 rounded-4xl">Characters</a></h4></li>
+        <li><h4 class="text-gray-400 text-2xl py-3 uppercase">Story</h4></li>
+      </ul>
       <a href="https://rancor.netlify.app/">
-      <button class="text-amber-300 w-full cursor-pointer hover:bg-white hover:text-black bg-red-600 px-15 py-5 right-0 bottom-15 absolute z-10">
+      <button class="text-amber-300 h-[80px] w-full cursor-pointer hover:bg-white hover:text-black bg-red-600 px-15 py-5 right-0 bottom-7 absolute z-10">
         EXIT TO MAIN MENU
       </button>
       </a>
@@ -154,25 +160,36 @@ https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fc.tenor.com%2FZF3Wah
           Only wanted to be the best boy, no matter the cost.
         </h3>
         <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.      </div>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+      </div>
       <div class="cursor-zoom-in bg-red-500 mt-20 w-full h-100 md:w-1/2 md:h-screen hover:border-4 border-amber-300"
       style="background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.9t1jACL7uxLHwf4S3wEf1gHaEo%3Fpid%3DApi&f=1&ipt=f5cbd992cfb4069e3e0e34582ae20b6f6205548c9f6f5b76227429140ab6610d&ipo=images);
       background-repeat: no-repeat; background-size: cover;
       "></div>
 
-      <section class="overflow-x-auto">
-        <div class="flex flex-row w-fit ml-10 md:w-screen gap-x-4 flex-nowrap">
-          <div class="cursor-zoom-in bg-green-500 w-80 h-screen md:w-1/3 hover:border-4"
+      <section class="overflow-x-auto md:overflow-x-hidden md:m-auto md:w-auto">
+        <div class="flex flex-row w-fit ml-10 md:ml-0 md:w-screen gap-x-4 flex-nowrap md:justify-center">
+          <div class="cursor-zoom-in bg-green-500 w-100 h-100 md:w-1/3 hover:border-4 border-amber-300"
           style="
-          background-image: url(https://mcdn.wallpapersafari.com/medium/92/58/h5SX9r.jpg
+          background-image: url(
+https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.istockphoto.com%2Fid%2F1328132950%2Fphoto%2Fpetting-german-shepherd.jpg%3Fs%3D170667a%26w%3D0%26k%3D20%26c%3DbRoWgTInZt0lyhLrKJtgy743gwAjIulmLjcgFG5tQ9c%3D&f=1&nofb=1&ipt=31f8568892d374931173b53f4427f3bbd13ac31a90ed7ad687eb77a5457e152e
           );
-          background-repeat: no-repeat; background-size: cover; background-position: center;"></div>
-          <div class="cursor-zoom-in bg-blue-500  w-80 h-screen md:w-1/3 md:h-100 hover:border-4"
-          style="
-          background-image: url(https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fcdn.wallpapersafari.com%2F59%2F80%2FCs3PoI.jpg&f=1&nofb=1&ipt=5f4eb69bdbd659b7cce041d311049229de3a092408d3801cecc84182b5c7202f
-          );
-          background-repeat: no-repeat; background-size: cover; background-position: center;"></div>
+          background-repeat: no-repeat; background-size: cover; background-position: center;">
+          <p class="text-black">
+            LIKES
+          </p>
         </div>
+          <div class="cursor-zoom-in bg-blue-500  w-100 h-100 md:w-1/3 md:h-100 hover:border-4 border-amber-300"
+          style="
+          background-image: url(
+https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fmedia-cache-ec0.pinimg.com%2F736x%2F75%2F41%2F1f%2F75411f489b7d0ab038038cc4130b4de8.jpg&f=1&nofb=1&ipt=0ee347e35db614a9077a1a2be203213938d8eaba40e21274cc6769bfae08591f
+          );
+          background-repeat: no-repeat; background-size: cover; background-position: center;">
+          <p>
+            HATES
+          </p>
+        </div>
+      </div>
       </section>
     </section>
     <!--Lucis Caelum hero--><section class="z-0 mask-t-from-95% mask-t-from-gray-900 mask-b-from-50% mask-b-from-gray-900 flex flex-col h-fit bg-no-repeat bg-cover bg-center bg-fixed" 
@@ -185,32 +202,46 @@ https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.tenor.com%2FjW
       <div class="w-screen h-screen"></div>
     </section>
     <!--Lucis Caelum logo--><div id="caelum" class="px-16 md:px-46 h-fit w-full md:w-screen flex flex-col justify-end md:pt-24 bg-transparent">
-        <h2 class="text-amber-100 font-bold text-7xl uppercase">
+        <h2 class="text-amber-100 font-bold text-7xl uppercase md:text-right">
           Lucis Caelum
         </h2>
       </div>
     <!--Lucis Caelum desc--><section class="flex flex-col md:flex-row md:flex-1/2 h-fit md:flex-wrap overflow-hidden gap-4 pb-10 mb-30">
+      <div class="cursor-zoom-in bg-red-500 mt-20 w-full h-100 md:w-1/2 md:h-screen hover:border-4"
+      style="background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.rover.com%2Fblog%2Fwp-content%2Fuploads%2Fblack-cat-min-e1680636929915.jpg&f=1&nofb=1&ipt=d1f708fa9732522aa0724921fa421a648c8089edc9a553e1aefc512074b4ecdf);
+      background-repeat: no-repeat; background-size: cover;
+      "></div>
       <div class="md:w-1/3 px-16 md:px-46 flex flex-col flex-1 h-fit w-full">
         <h3 class="text-red-500 font-bold text-4xl py-10">
           It actually takes an effort to NOT like everybody equally.
         </h3>
         <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.        </p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
       </div>
-      <div class="cursor-zoom-in bg-red-500 mt-20 w-full h-100 md:w-1/2 md:h-screen hover:border-4"
-      style="background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.rover.com%2Fblog%2Fwp-content%2Fuploads%2Fblack-cat-min-e1680636929915.jpg&f=1&nofb=1&ipt=d1f708fa9732522aa0724921fa421a648c8089edc9a553e1aefc512074b4ecdf);
-      background-repeat: no-repeat; background-size: cover;
-      "></div>
 
-      <section class="overflow-x-auto">
-        <div class="flex flex-row w-fit ml-10 md:w-screen gap-x-4 flex-nowrap">
-          <div class="cursor-zoom-in bg-green-500 w-80 h-screen md:w-1/3 hover:border-4"
-          style="background-image: url(https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fgetwallpapers.com%2Fwallpaper%2Ffull%2F4%2F5%2F6%2F706621-black-cat-wallpapers-1440x2560-for-mobile-hd.jpg&f=1&nofb=1&ipt=348f397878f06cb88c1366ebb3d571a228b4e103e7d5aff090a9f66eeea73201);
-          background-repeat: no-repeat; background-size: cover; background-position: center;"></div>
-          <div class="cursor-zoom-in bg-blue-500  w-80 h-screen md:w-1/3 md:h-100 hover:border-4"
-          style="background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.warrenphotographic.co.uk%2Fphotography%2Fbigs%2F21585-Black-cat-white-background.jpg&f=1&nofb=1&ipt=4188624d80f400d30547176fdace1d93cc52f06cf49ff8e1121c7e882001651f);
-          background-repeat: no-repeat; background-size: cover; background-position: center;"></div>
+      <section class="overflow-x-auto md:overflow-x-hidden md:m-auto md:w-auto">
+        <div class="flex flex-row w-fit ml-10 md:ml-0 md:w-screen gap-x-4 flex-nowrap md:justify-center">
+          <div class="cursor-zoom-in bg-green-500 w-100 h-100 md:w-1/3 hover:border-4 border-amber-300"
+          style="
+          background-image: url(
+https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg2.joyreactor.com%2Fpics%2Fpost%2Fcats-black-cat-sleep-8600747.png&f=1&nofb=1&ipt=0db74c55bd501803fa9b735e465ed72e2ce4ea026f700fe210f31df5706a6566
+          );
+          background-repeat: no-repeat; background-size: cover; background-position: center;">
+          <p class="text-black">
+            LIKES
+          </p>
         </div>
+          <div class="cursor-zoom-in bg-blue-500  w-100 h-100 md:w-1/3 md:h-100 hover:border-4 border-amber-300"
+          style="
+          background-image: url(
+https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fil9.picdn.net%2Fshutterstock%2Fvideos%2F9204794%2Fthumb%2F1.jpg&f=1&nofb=1&ipt=ddf1e533658de6b650c5e3ca635d7c5c27cd376eca07f1a7533be5557e4df39b
+          );
+          background-repeat: no-repeat; background-size: cover; background-position: center;">
+          <p>
+            HATES
+          </p>
+        </div>
+      </div>
       </section>
     </section>
 
@@ -235,7 +266,8 @@ https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.tenor.com%2F2I
           Have courage and be kind. It's all I ever had.
         </h3>
         <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.        </p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+</p>
       </div>
       <div class="cursor-zoom-in bg-red-500 mt-20 w-full h-100 md:w-1/2 md:h-screen hover:border-4"
       style="background-image: url(
@@ -244,19 +276,29 @@ https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpetvarsity.com%2Fwp-
       background-repeat: no-repeat; background-size: cover;
       "></div>
 
-      <section class="overflow-x-auto">
-        <div class="flex flex-row w-fit ml-10 md:w-screen gap-x-4 flex-nowrap">
-          <div class="cursor-zoom-in bg-green-500 w-80 h-screen md:w-1/3 hover:border-4"
-          style="background-image: url(
-https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpreview.redd.it%2Fthis-mingming-in-antipolo-market-v0-jur2sd5fj72c1.jpg%3Fwidth%3D1080%26crop%3Dsmart%26auto%3Dwebp%26s%3D4b6ec049351ce80e33885d8386384545adbcb543&f=1&nofb=1&ipt=6865bd5fe68dbff10359e62a6e6c1a7bcb130fc24d94b4b402ba33bac9d24058            );
-
-          background-repeat: no-repeat; background-size: cover; background-position: center;"></div>
-          <div class="cursor-zoom-in bg-blue-500  w-80 h-screen md:w-1/3 md:h-100 hover:border-4"
-          style="background-image: url(
-https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flookaside.fbsbx.com%2Flookaside%2Fcrawler%2Fmedia%2F%3Fmedia_id%3D1028634089360943&f=1&nofb=1&ipt=76afc296d36da5d2b7ae73dde1105b7ea975cbb47d0cfb0c782518a0b840cd4b
+      <section class="overflow-x-auto md:overflow-x-hidden md:m-auto md:w-auto">
+        <div class="flex flex-row w-fit ml-10 md:ml-0 md:w-screen gap-x-4 flex-nowrap md:justify-center">
+          <div class="cursor-zoom-in bg-green-500 w-100 h-100 md:w-1/3 hover:border-4 border-amber-300"
+          style="
+          background-image: url(
+https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2F0KMCLO2ia60%2Fmaxresdefault.jpg&f=1&nofb=1&ipt=5f3f4fe375bf45f94fc98942a46b78c94994fe34c907b745883192731c7fe90a
           );
-          background-repeat: no-repeat; background-size: cover; background-position: center;"></div>
+          background-repeat: no-repeat; background-size: cover; background-position: right;">
+          <p class="text-black">
+            LIKES
+          </p>
         </div>
+          <div class="cursor-zoom-in bg-blue-500  w-100 h-100 md:w-1/3 md:h-100 hover:border-4 border-amber-300"
+          style="
+          background-image: url(
+https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpestquit.in%2Fwp-content%2Fuploads%2F2022%2F03%2Flizard-pest-control-in-india-768x384.jpg&f=1&nofb=1&ipt=a781199c35968173605d75d5e0ea4e7f0b5cb21dc00019905520a62bacdf0d97
+          );
+          background-repeat: no-repeat; background-size: cover; background-position: center;">
+          <p>
+            HATES
+          </p>
+        </div>
+      </div>
       </section>
     </section>
 
@@ -271,39 +313,50 @@ https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.tenor.com%2Fim
       <div class="w-screen h-screen"></div>
     </section>
     <!--Tortol logo--><div id="tortol" class="px-16 md:px-46 h-fit w-full md:w-screen flex flex-col justify-end md:pt-24 bg-transparent">
-        <h2 class="text-amber-100 font-bold text-7xl uppercase">
+        <h2 class="text-amber-100 font-bold text-7xl uppercase md:text-right">
           Kachow + Mater
         </h2>
       </div>
     <!--Tortol desc--><section class="flex flex-col md:flex-row md:flex-1/2 h-fit md:flex-wrap overflow-hidden gap-4 pb-10 mb-30">
-      <div class="md:w-1/3 px-16 md:px-46 flex flex-col flex-1 h-fit w-full">
-        <h3 class="text-indigo-500 font-bold text-4xl py-10">
-          We did what everybody thought was impossible - we stacked.
-        </h3>
-        <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.        </p>
-      </div>
       <div class="cursor-zoom-in bg-red-500 mt-20 w-full h-100 md:w-1/2 md:h-screen hover:border-4"
       style="background-image: url(
 https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F30319483%2Fpexels-photo-30319483%2Ffree-photo-of-two-turtles-resting-in-a-wire-enclosure-outdoors.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26w%3D1260%26h%3D750%26dpr%3D1&f=1&nofb=1&ipt=d58f171191bf2209e9ec98231c11c6c2d3f030d9e89a5f6a07106939820ae9c8
         );
       background-repeat: no-repeat; background-size: cover;
       "></div>
+      <div class="md:w-1/3 px-16 md:px-46 flex flex-col flex-1 h-fit w-full">
+        <h3 class="text-indigo-500 font-bold text-4xl py-10">
+          We did what everybody thought was impossible - we stacked.
+        </h3>
+        <p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+</p>
+      </div>
 
-      <section class="overflow-x-auto">
-        <div class="flex flex-row w-fit ml-10 md:w-screen gap-x-4 flex-nowrap">
-          <div class="cursor-zoom-in bg-green-500 w-80 h-screen md:w-1/3 hover:border-4"
-          style="background-image: url(
-          https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpreview.redd.it%2F5kif7u434wd61.jpg%3Fauto%3Dwebp%26s%3D9d32f9a500778c07ebb537755007b4b8bc1f0da2&f=1&nofb=1&ipt=7ba047a9ed4562801c95bccd3dbf05b7b33057755d721fb993363a23a1e2b4e9 
-           );
-          background-repeat: no-repeat; background-size: cover; background-position: center;"></div>
-          <div class="cursor-zoom-in bg-blue-500  w-80 h-screen md:w-1/3 md:h-100 hover:border-4"
-          style="background-image: url(
-https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpcsd.gov.ph%2Fwp-content%2Fuploads%2F2021%2F05%2FIMG_6929-1080x871.jpg&f=1&nofb=1&ipt=7d93c59a4ea2badbab7ed6bf58e7d897be7342883e658764344d3dde84e4c277
+      <section class="overflow-x-auto md:overflow-x-hidden md:m-auto md:w-auto">
+        <div class="flex flex-row w-fit ml-10 md:ml-0 md:w-screen gap-x-4 flex-nowrap md:justify-center">
+          <div class="cursor-zoom-in bg-green-500 w-100 h-100 md:w-1/3 hover:border-4 border-amber-300"
+          style="
+          background-image: url(
+https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.wallpaperscraft.com%2Fimage%2Fsingle%2Fsea_turtle_turtle_underwater_world_137836_1920x1080.jpg&f=1&nofb=1&ipt=dd493fde6c6024eb985e41e345f9b399fec1335aa51ca21b1910492bf10f7403
           );
-          background-repeat: no-repeat; background-size: cover; background-position: center;"></div>
+          background-repeat: no-repeat; background-size: cover; background-position: right;">
+          <p class="text-black">
+            LIKES
+          </p>
         </div>
-      </section>       
+          <div class="cursor-zoom-in bg-blue-500  w-100 h-100 md:w-1/3 md:h-100 hover:border-4 border-amber-300"
+          style="
+          background-image: url(
+https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.spacefacts.de%2Fgraph%2Fdrawing%2Fdrawings2%2Fapollo-16_earth.jpg&f=1&nofb=1&ipt=b7a275bd8cb4a853714219391ad6c3ee83abe34ba15ca5ca5673368d64b2082d
+          );
+          background-repeat: no-repeat; background-size: cover; background-position: center;">
+          <p>
+            HATES
+          </p>
+        </div>
+      </div>
+      </section>   
     </section>
 <!--Battle System--><div class="mask-t-from-95% mask-t-from-gray-900 mask-b-from-95% mask-b-from-gray-900 bg-no-repeat bg-center bg-cover text-center text-white py-50 px-14 md:py-40 md:px-46 flex flex-col flex-1 h-fit w-full"
     style="background-image: url(
