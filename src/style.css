@@ -12,6 +12,15 @@ html {
     p {
         color: white;
     }
+    h1 {
+      
+    }
+    h2 {
+      font-family: persona-menu;
+    }
+    h3 {
+      font-family: persona-markin;
+    }
 }
 .work-sans-pets-600 {
   font-family: "Work Sans", sans-serif;
@@ -21,4 +30,18 @@ html {
 }
 @layer components {
 
+}
+
+/*Custom Fonts*/
+@font-face {
+  font-family: persona-menu;
+  src: url(./assets/fonts/Persona5MenuFontPrototype-Regular.ttf);
+}
+@font-face {
+  font-family: persona-expose;
+  src: url(./assets/fonts/Expose-Regular.otf);
+}
+@font-face {
+  font-family: persona-markin;
+  src: url(./assets/fonts/Markin-LT-Ultra-Bold.ttf);
 }
