@@ -10,7 +10,7 @@ html {
         font-size: large;
     }
     p {
-        color: white;
+        color: var(--color-white);
     }
     h1 {
       
@@ -18,9 +18,14 @@ html {
     h2 {
       font-family: persona-menu;
     }
-    h3 {
+    p {
       font-family: persona-markin;
     }
+    button {
+      font-family: persona-expose;
+      font-size: var(--text-3xl);
+    }
+    
 }
 .work-sans-pets-600 {
   font-family: "Work Sans", sans-serif;
@@ -29,7 +34,9 @@ html {
   font-style: normal;
 }
 @layer components {
-
+  button {
+    @apply bg-red-700 text-white;
+  }
 }
 
 /*Custom Fonts*/

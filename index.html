@@ -14,11 +14,11 @@
     <header class="fixed w-full mt-11 z-20">
       <ul class="py-0.5 px-11.5 flex flex-row justify-between w-full bg-transparent z-10">
         <li>
-          <a href="#hero">
+          <!--a href="#hero">
           <button id="four-of" class="animate-pulse font-extrabold h-12 w-12 text-5xl cursor-pointer text-amber-100 text-shadow-2xs text-shadow-red-700">
             [V]
           </button> 
-          </a>
+          </a-->
         </li>
         <li>
           <button id="side-menu-button" onclick="side_menu()" class="hover:text-amber-100 rotate-90 h-12 w-12 text-5xl cursor-pointer text-amber-50">
@@ -36,7 +36,7 @@
                   menu_icon.innerHTML = default_icon;
                   menu_icon.style.borderRadius = '0';
                   menu.style.display = 'none';
-                  four.innerHTML = '[V]';
+                  //four.innerHTML = '[V]';
                   document.getElementsByTagName('main')[0].style.filter = 'none';
                    document.getElementsByTagName('footer')[0].style.filter = 'none';
                 }
@@ -44,7 +44,7 @@
                    menu_icon.innerHTML = close_icon;
                    menu_icon.style.borderRadius = '100px';
                    menu.style.display = 'flex';
-                   four.innerHTML = '';
+                   //four.innerHTML = '';
                    document.getElementsByTagName('main')[0].style.filter = 'blur(100px)';
                     document.getElementsByTagName('footer')[0].style.filter = 'blur(100px)';
                 }
@@ -67,7 +67,7 @@ https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Forigi
     <aside oncontextmenu="return(false)" class="text-black flex justify-center align-middle items-center w-full h-fit bg-transparent sticky bottom-1 z-5">
       <div>
         <a href="https://rancor.netlify.app/pico8/" target="_blank">
-        <button onclick="show_demoa()" class="border-2 animate-pulse uppercase w-full cursor-pointer hover:bg-white hover:text-black bg-white px-15 py-5">
+        <button class="border-2 animate-pulse uppercase w-full cursor-pointer px-15 py-5">
           Play Demo
         </button>
         </a>
@@ -101,16 +101,16 @@ https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Forigi
 https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperaccess.com%2Ffull%2F2369529.png&f=1&nofb=1&ipt=672a080cfa0f13b2f0c54b6835161791223989b71f40341f512bc096b365b478
     );"
     >
-      <h2 class="pt-10 px-3 font-extrabold text-5xl bg-[rgba(0,0,0,.85)]">The Story, So Far.</h2>
-      <p class="py-10 px-3 mb-10 bg-[rgba(0,0,0,.85)]">
+      <h2 class="z-0 border-8 border-amber-50 outline-8 outline-black w-fit pt-10 px-3 font-extrabold text-5xl bg-[rgba(0,0,0,.85)] rotate-3">The Story, So Far.</h2>
+      <p class="-z-10 border-8 border-amber-50 outline-8 outline-black py-10 px-3 mb-10 bg-[hsla(0,0%,0%,1)] -rotate-3">
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
 <br> <br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
-       <a href="https://rancor.netlify.app/pico8/" target="_blank">
-        <button onclick="show_demoa()" class="text-black border-2 m-auto max-w-[300px] animate-pulse uppercase w-full cursor-pointer hover:bg-white hover:text-black bg-white px-15 py-5">
+       
+        <button onclick="show_demo()" class="border-4 border-black m-auto w-full max-w-[300px] uppercase cursor-pointer hover:text-black px-15 py-5">
           Story
         </button>
-        </a>
+        
     </div>
     <!--The Warriors--><div id="characters" class="bg-black text-center bg-no-repeat bg-cover bg-top text-white mb-50 py-50 md:py-40 md:px-46 flex flex-col flex-1 h-fit w-full"
 style="
@@ -118,15 +118,12 @@ background-image: url(
 https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapers.com%2Fimages%2Fhd%2Fpersona-5-phantom-thieves-of-hearts-raq8mhhae5bdrj6q.jpg&f=1&nofb=1&ipt=21805fb51a965bbb655453be3cd29abbf720a9a45d88255d48ac7ba9f2147775
 );
 "   >
-      <h2 class="pt-10 px-3 font-extrabold text-5xl bg-[rgba(0,0,0,.85)]">The Heroes?</h2>
-      <p class="py-10 px-3 mb-10 bg-[rgba(0,0,0,.85)]">
+      <h2 class="z-0 border-8 border-amber-50 outline-8 outline-black w-fit pt-10 px-3 font-extrabold text-5xl bg-[rgba(0,0,0,.85)] rotate-3">The Heroes?</h2>
+      <p class="border-8 border-amber-50 outline-8 outline-black py-10 px-3 mb-10 bg-[hsla(0,0%,0%,1)] -rotate-3">
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+<br> <br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
-      <a href="https://rancor.netlify.app/pico8/" target="_blank">
-        <button onclick="show_demoa()" class="text-black border-2 m-auto max-w-[300px] animate-pulse uppercase w-full cursor-pointer hover:bg-white hover:text-black bg-white px-15 py-5">
-          Characters
-        </button>
-        </a>
+
     </div>
     <!--Tteokbokki hero--><section class="contrast-200 z-0 mask-t-from-95% mask-t-from-gray-900 mask-b-from-50% mask-b-from-gray-900 flex flex-col h-fit bg-no-repeat bg-contain bg-center" 
     style="
