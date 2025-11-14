@@ -11,18 +11,16 @@
     <title>Phantom Five</title>
   </head>
   <body class="-z-20 scroll-smooth bg-black bg-no-repeat bg-contain flex flex-col selection:bg-pink-300 selection:text-gray-700"
-  style="background-image: url(
-./src/assets/imgs/body.png
-  );"
+
   >
     <header class="fixed w-full mt-11 z-20">
       <ul class="py-0.5 px-11.5 flex flex-row justify-between w-full bg-transparent z-10">
         <li>
-          <!--a href="#hero">
-          <button id="four-of" class="animate-pulse font-extrabold h-12 w-12 text-5xl cursor-pointer text-amber-100 text-shadow-2xs text-shadow-red-700">
-            [V]
+          <a href="#hero">
+          <button class="font-extrabold h-12 w-12 text-5xl cursor-pointer text-amber-100 text-shadow-2xs text-shadow-red-700">
+            <h1 id="four-of" >V</h1>
           </button> 
-          </a-->
+          </a>
         </li>
         <li>
           <button id="side-menu-button" onclick="side_menu()" class=" hover:text-amber-100 rotate-90 h-12 w-12 text-5xl cursor-pointer text-amber-50">
@@ -39,16 +37,16 @@
                 if (menu_icon.innerHTML == close_icon) {
                   menu_icon.innerHTML = default_icon;
                   menu_icon.style.borderRadius = '0';
-                  menu.style.display = 'none';
-                  //four.innerHTML = '[V]';
+                  menu.style.opacity = '0';
+                  four.innerHTML = 'V';
                   document.getElementsByTagName('main')[0].style.filter = 'none';
                    document.getElementsByTagName('footer')[0].style.filter = 'none';
                 }
                 else {
                    menu_icon.innerHTML = close_icon;
                    menu_icon.style.borderRadius = '100px';
-                   menu.style.display = 'flex';
-                   //four.innerHTML = '';
+                   menu.style.opacity = '100';
+                   four.innerHTML = '';
                    document.getElementsByTagName('main')[0].style.filter = 'blur(100px)';
                     document.getElementsByTagName('footer')[0].style.filter = 'blur(100px)';
                 }
@@ -58,7 +56,7 @@
       </ul>
     </header>
     
-    <main class="bg-cover bg-no-repeat z-2 overflow-x-hidden">
+    <main class="bg-cover bg-no-repeat z-2 overflow-x-hidden transition-all ease-in-out">
     <!--HERO--><div id="hero" class="bg-black mask-t-from-85% mask-t-from-gray-900 mask-b-from-75% bg-center bg-no-repeat bg-cover py-5 px-11.5 h-screen w-full text-amber-50 flex flex-col justify-center items-center"
     style="background-image: url(
 https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperaccess.com%2Ffull%2F106070.jpg&f=1&nofb=1&ipt=c2a7e5ec95372661117180dfa207fcd8d4cda8efdb9b14e835d216ece1bc2ed7
@@ -67,14 +65,15 @@ https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperaccess.com%
       <h1 class="-rotate-6 bg-black font-extrabold text-7xl text-center text-shadow-2xs text-shadow-black text-white"><span class="text-white">P</span>Han<span class="text-white">toM</span></h1>
       <h1 class="rotate-6 bg-black font-extrabold text-7xl uppercase text-shadow-2xs text-shadow-black text-white">Fi<span class="text-red-700 text-8xl">v</span>e</h1>
     </div>
-
-    <aside oncontextmenu="return(false)" class="text-black flex justify-center align-middle items-center w-full h-fit bg-transparent z-5">
-      <div>
-        <a href="https://rancor.netlify.app/pico8/" target="_blank">
-        <button class="animate-bounce -rotate-12 border-8 border-white outline-8 outline-black uppercase w-full cursor-pointer px-15 py-5 text-5xl">
+    <a href="https://rancor.netlify.app/pico8/" target="_blank">
+        <button class="animate-bounce -rotate-12 border-8 border-white outline-8 outline-black uppercase w-full cursor-pointer px-15 py-5 text-5xl absolute bottom-0">
           Play Demo
         </button>
         </a>
+
+    <aside oncontextmenu="return(false)" class="text-black flex justify-center align-middle items-center w-full h-fit bg-transparent z-5">
+      <div>
+        
         <script>
           function show_demo() {
             demo_mod = document.getElementById('demo_module').style;
@@ -246,7 +245,7 @@ https://images.alphacoders.com/132/thumb-350-1327342.webp
       </div>
 
        <!--Past Present Pictures-->
-    <div id="caelum-picture" class="bg-center text-yellow-500 flex flex-row justify-center items-center cursor-zoom-in bg-black mt-20 w-full h-screen lg:w-1/2 lg:h-screen border-8 border-red-500 outline-8 outline-black -rotate-3">
+    <div id="caelum-picture" class="bg-center text-yellow-500 flex flex-row justify-center items-center cursor-zoom-in bg-black mt-20 w-full h-screen lg:w-1/2 lg:h-screen border-8 border-red-500 outline-8 outline-black rotate-3">
       <div class="h-full max-h-[600px] w-2/3">
         <img class="opacity-0 absolute transition-opacity ease-in-out" id="ann_new"  src="./src/assets/imgs/ann_new.png" alt="">
         <img class="opacity-100 absolute transition-opacity ease-in-out" id="ann_old" src="./src/assets/imgs/ann_old.png" alt="">
@@ -378,26 +377,27 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
     </main>
 
     <!--SideBar-->
-    <aside id="side-menu" class="flex-col h-full hidden">
-    <div class="shadow-2xl shadow-black flex flex-col overflow-y-scroll bg-[rgba(0,0,0,1)] h-screen text-amber-50 ml-20 md:ml-96 w-5/6 md:w-1/2 top-0 right-0 fixed z-10">
-      <a href="https://rancor.netlify.app/" class="cursor-pointer w-[screen] h-[fit] z-99">
-      <button class="text-center border-[1px] border-red-600 text-white w-[150px] h-[50px] m-1 py-2 cursor-pointer hover:bg-gray-950 bg-black left-0 top-0 absolute z-99">
-        EXIT
-      </button>
-      </a>
-      <ul class="flex flex-col overflow-y-scroll pl-10 mt-15">
-        <li class=""><h2 class="text-gray-600 text-2xl py-3 uppercase">Phantom Five</h2></li>
+    <aside id="side-menu" class="flex-col h-full opacity-0 transition-opacity ease-in-out">
+    <div class="bg-no-repeat bg-cover shadow-2xl shadow-black flex flex-col overflow-y-scroll bg-transparent h-screen text-amber-50 ml-20 md:ml-96 w-5/6 md:w-1/2 top-0 right-0 fixed z-10"
+    style="background-image: url(
+https://i.imgur.com/315n4PI.png
+      );"
+    >
+      
+      <ul class="flex flex-col overflow-y-scroll pl-10 mt-15 h-fit">
+        <li class=""><h2 class="text-white text-2xl py-3 uppercase">Phantom Five</h2></li>
       </ul>
-      <ul class="flex flex-col overflow-y-scroll pl-10 h-80">
-        <li class="hover:text-amber-100 -rotate-2"><h1 class="font-extrabold text-4xl py-1"><a href="#bokki"><button onclick="side_menu();" class="uppercase cursor-pointer">Tteok bokki</button></a></h2></li>
-        <li class="hover:text-amber-100 -rotate-3"><h1 class="font-extrabold text-4xl py-1"><a href="#caelum"><button onclick="side_menu();" class="uppercase cursor-pointer">Lucis Caelum</button></a></h2></li>
-        <li class="hover:text-amber-100 -rotate-6"><h1 class="font-extrabold text-4xl py-1"><a href="#asha"><button onclick="side_menu();" class="uppercase cursor-pointer">Vrtra Azdaya</button></a></h2></li>
-        <li class="hover:text-amber-100 -rotate-12"><h1 class="font-extrabold text-4xl py-1"><a href="#tortol"><button onclick="side_menu();" class="uppercase cursor-pointer">Chow Mater</button></a></h2></li>
+      <ul class="flex flex-col justify-center gap-5 overflow-y-scroll pl-10 h-1/2">
+        <li class="-rotate-3 hover:text-amber-100"><h1 class="font-extrabold text-4xl py-1"><a class=" p-2 bg-black border-4 border-white outline-8 outline-black text-center" href="#bokki"><button onclick="side_menu();" class="uppercase cursor-pointer">Tteok bokki</button></a></h2></li>
+        <li class="-rotate-3 hover:text-amber-100"><h1 class="font-extrabold text-4xl py-1"><a class=" p-2 bg-black border-4 border-white outline-8 outline-black text-center" href="#caelum"><button onclick="side_menu();" class="uppercase cursor-pointer">Lucis Caelum</button></a></h2></li>
+        <li class="-rotate-3 hover:text-amber-100"><h1 class="font-extrabold text-4xl py-1"><a class=" p-2 bg-black border-4 border-white outline-8 outline-black text-center" href="#asha"><button onclick="side_menu();" class="uppercase cursor-pointer">Vrtra Azdaya</button></a></h2></li>
+        <li class="-rotate-3 hover:text-amber-100"><h1 class="font-extrabold text-4xl py-1"><a class=" p-2 bg-black border-4 border-white outline-8 outline-black text-center" href="#tortol"><button onclick="side_menu();" class="uppercase cursor-pointer">Chow Mater</button></a></h2></li>
       </ul>
       <ul class="shadow-2xl shadow-black flex flex-row overflow-x-scroll py-10 pl-10 bg-[rgba(5,5,5,.1)] w-full gap-2 flex-nowrap">
         <li class="w-fit"><h4 class="text-white text-2xl px-5 py-3 uppercase bg-gray-950 rounded-4xl border-2 border-white"><a href="#story"><button onclick="side_menu();" class="uppercase cursor-pointer">Story</button></a></h4></li>
         <li class="w-fit"><h4 class="text-white text-2xl px-5 py-3 uppercase bg-gray-950 rounded-4xl border-2 border-white"><a href="#characters"><button onclick="side_menu();" class="uppercase cursor-pointer">Characters</button></a></h4></li>
         <li class="w-fit"><h4 class="text-white text-2xl px-5 py-3 uppercase bg-gray-950 rounded-4xl border-2 border-white"><a href="#battle"><button onclick="side_menu();" class="uppercase cursor-pointer">Battle&nbsp;System</button></a></h4></li>
+        <li class="w-fit"><h4 class="text-white text-2xl px-5 py-3 uppercase bg-red-700 rounded-4xl border-2 border-white"><a href="https://rancor.netlify.app/"><button onclick="side_menu();" class="uppercase cursor-pointer">EXIT</button></a></h4></li>
       </ul>
     </div>
     </aside>

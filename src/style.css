@@ -12,16 +12,22 @@ html {
     p {
         color: var(--color-white);
     }
-    h1 {
+    main h1 {
       font-family: persona-menu
     }
-    h2 {
+    header ul li:first-child {
+      font-family: persona-menu;
+    }
+    header ul li:last-child {
+      font-family: persona-markin;
+    }
+    main h2 {
       font-family: persona-menu;
     }
     p {
       font-family: persona-markin;
     }
-    button {
+    main button {
       font-family: persona-expose;
       font-size: var(--text-3xl);
     }
