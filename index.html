@@ -25,7 +25,7 @@
           </a-->
         </li>
         <li>
-          <button id="side-menu-button" onclick="side_menu()" class=" hover:text-amber-100 rotate-90 h-12 w-12 text-5xl cursor-pointer text-amber-50">
+          <button id="side-menu-button" onclick="side_menu()" class="bg-red-600 hover:text-amber-100 rotate-90 h-12 w-12 text-5xl cursor-pointer text-amber-50">
             II
           </button>
           <script>
@@ -58,7 +58,7 @@
       </ul>
     </header>
     
-    <main class="bg-cover bg-no-repeat z-2">
+    <main class="bg-cover bg-no-repeat z-2 overflow-x-hidden">
     <!--HERO--><div id="hero" class="bg-black mask-t-from-85% mask-t-from-gray-900 mask-b-from-75% bg-center bg-no-repeat bg-cover py-5 px-11.5 h-screen w-full text-amber-50 flex flex-col justify-center items-center"
     style="background-image: url(
 https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperaccess.com%2Ffull%2F106070.jpg&f=1&nofb=1&ipt=c2a7e5ec95372661117180dfa207fcd8d4cda8efdb9b14e835d216ece1bc2ed7
@@ -68,7 +68,7 @@ https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperaccess.com%
       <h1 class="rotate-6 bg-black font-extrabold text-7xl uppercase text-shadow-2xs text-shadow-black text-white">Fi<span class="text-red-700 text-8xl">v</span>e</h1>
     </div>
 
-    <aside oncontextmenu="return(false)" class="text-black flex justify-center align-middle items-center w-full h-fit bg-transparent sticky bottom-1 z-5">
+    <aside oncontextmenu="return(false)" class="text-black flex justify-center align-middle items-center w-full h-fit bg-transparent z-5">
       <div>
         <a href="https://rancor.netlify.app/pico8/" target="_blank">
         <button class="animate-bounce -rotate-12 border-8 border-white outline-8 outline-black uppercase w-full cursor-pointer px-15 py-5 text-5xl">
@@ -111,7 +111,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <br> <br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
        
-        <button onclick="show_demo()" class="text-9xl rotate-12 border-8 border-white outline-8 outline-black m-auto w-full max-w-[300px] uppercase cursor-pointer hover:invert px-15 py-5">
+        <button onclick="show_demo()" class="animate-bounce text-9xl rotate-12 border-8 border-white outline-8 outline-black m-auto w-full max-w-[300px] uppercase cursor-pointer hover:invert px-15 py-5">
           Story
         </button>
         
@@ -128,33 +128,32 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
   <div class="w-full h-fit">
     <img src="./src/assets/imgs/thieves.png" height="960px" width="925px" alt="">
   </div>
-     
 
     </div>
-    <div class="w-full">
-      <img src="./src/assets/imgs/border.png" width="auto" alt="">
-    </div>
-    <!--Tteokbokki hero--><section class="contrast-200 z-0 mask-t-from-95% mask-t-from-gray-900 mask-b-from-50% mask-b-from-gray-900 flex flex-col h-fit bg-no-repeat bg-cover bg-center" 
+    <!--Tteokbokki hero><section class="contrast-200 z-0 mask-t-from-95% mask-t-from-gray-900 mask-b-from-50% mask-b-from-gray-900 flex flex-col h-fit bg-no-repeat bg-cover bg-center" 
     style="
     background-image: url(
 https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.fineartamerica.com%2Fimages%2Fartworkimages%2Fmediumlarge%2F1%2Fred-dog--german-shepherd-sandy-keeton.jpg&f=1&nofb=1&ipt=bebb191954d9cf09905dadeef9353d8d891706993e252d0b16553b2dd79a094d
       );
     ">
       <div class="w-screen h-screen"></div>
-    </section>
+    </section-->
     <!--Tteokbokki Logo-->  <div id="bokki" class="px-16 md:px-46 h-fit w-full md:w-screen flex flex-col justify-end md:pt-24">
-        <h2 class="z-10 -rotate-3 text-amber-500 font-bold text-7xl uppercase text-left">
-          Tteok bokki
+        <h2 class="z-10 -rotate-3 text-amber-500 font-bold text-8xl uppercase text-left">
+          Tteok <span class="text-white">bokki</span>
         </h2>
       </div>
+    <!--Bokki Sneak--><div class="w-full">
+    <img src="./src/assets/imgs/border.png" width="100%" alt="">
+    </div>
     <!--Tteokbokki Desc--><section class="bg-transparent flex flex-col lg:flex-row lg:flex-1/2 h-fit lg:flex-wrap overflow-hidden gap-4 pb-10 mb-30"
     style="background-image: url(
       ./src/assets/imgs/triangle.png
     );"
     >
       <div class="lg:w-1/3 px-10 lg:px-30 flex flex-col flex-1 h-fit w-full">
-        <h3 class="text-amber-500 font-bold text-4xl py-10 bg-[hsla(0,0%,0%,1)] -rotate-3">
-         "<br> Only wanted to be the best boy, no matter the cost. <br><span class="float-right"> " </span>
+        <h3 class="text-amber-500 font-bold text-4xl py-10 px-3 bg-[hsla(0,0%,0%,1)] -rotate-3">
+         <span class="float-left"> 『 </span><br> Be the best boy, no matter the cost. <br><span class="float-right">』</span>
         </h3>
         <p class="border-8 border-amber-50 outline-8 outline-black py-10 px-3 mb-10 bg-[hsla(0,0%,0%,1)] -rotate-3">
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
@@ -162,22 +161,30 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
       </p>
         
       </div>
-      <div id="bokki-picture" class="text-yellow-500 flex flex-row gap-y-2.5 justify-center items-end cursor-zoom-in bg-red-500 mt-20 w-full h-100 lg:w-1/2 lg:h-screen border-8 border-yellow-500 outline-8 outline-black -rotate-3"
+    <!--Past Present Pictures-->
+    <div id="bokki-picture" class="text-yellow-500 flex flex-row gap-y-2.5 justify-start items-center cursor-zoom-in bg-red-500 mt-20 w-full h-full lg:w-1/2 lg:h-screen border-8 border-yellow-500 outline-8 outline-black -rotate-3"
       style="background-image: url(
         https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.9t1jACL7uxLHwf4S3wEf1gHaEo%3Fpid%3DApi&f=1&ipt=f5cbd992cfb4069e3e0e34582ae20b6f6205548c9f6f5b76227429140ab6610d&ipo=images
         );
       background-repeat: no-repeat; background-size: cover;
       ">
-      <button onclick="
-      document.getElementById('bokki-picture').style.backgroundImage = 'url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.fotofits.com%2Fpetzlover%2Fgallery%2Fimg%2Fl%2Fgerman-shepherd-686128.jpg&f=1&nofb=1&ipt=d6f833ffa0781dc31c060017474c83ae5cc0af20531037d70b3dea6dc5d430cc)'
-      " class="bg-black uppercase w-fit h-fit ml-1 cursor-pointer px-5 py-5 text-2xl">
-          Past
-        </button>
-        <button onclick="
-      document.getElementById('bokki-picture').style.backgroundImage = 'url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.9t1jACL7uxLHwf4S3wEf1gHaEo%3Fpid%3DApi&f=1&ipt=f5cbd992cfb4069e3e0e34582ae20b6f6205548c9f6f5b76227429140ab6610d&ipo=images)'
-      " class="bg-black  uppercase w-fit h-fit ml-1  cursor-pointer px-5 py-5 text-2xl">
-          Present
-        </button>
+        <div>
+          <button onclick="
+          document.getElementById('bokki-picture').style.backgroundImage = 'url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.fotofits.com%2Fpetzlover%2Fgallery%2Fimg%2Fl%2Fgerman-shepherd-686128.jpg&f=1&nofb=1&ipt=d6f833ffa0781dc31c060017474c83ae5cc0af20531037d70b3dea6dc5d430cc)';
+          document.getElementById('futaba').src = './src/assets/imgs/futaba_new.png';
+          " class="m-4 bg-black uppercase w-fit h-fit ml-1 cursor-pointer px-5 py-5 text-2xl rotate-3 outline-4 outline-white">
+            Past
+          </button>
+          <button onclick="
+            document.getElementById('bokki-picture').style.backgroundImage = 'url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.9t1jACL7uxLHwf4S3wEf1gHaEo%3Fpid%3DApi&f=1&ipt=f5cbd992cfb4069e3e0e34582ae20b6f6205548c9f6f5b76227429140ab6610d&ipo=images)';
+            document.getElementById('futaba').src = './src/assets/imgs/futaba_old.png';
+            " class="m-4 bg-black  uppercase w-fit h-fit ml-1  cursor-pointer px-5 py-5 text-2xl -rotate-3 outline-4 outline-white">
+            Present
+          </button>
+          </div>
+        <div class="h-screen max-h-[600px] max-w-96">
+        <img id="futaba" class="z-20" src="./src/assets/imgs/futaba_old.png" alt="">
+      </div>
     </div>
 
       <!--section class="overflow-x-auto md:overflow-x-hidden md:m-auto md:w-auto">
@@ -206,7 +213,7 @@ https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fmedia-cache-ec0.pinim
       </section-->
     </section>
 
-    <!--Caelum hero--><section class="contrast-200 z-0 mask-t-from-95% mask-t-from-gray-900 mask-b-from-50% mask-b-from-gray-900 flex flex-col h-fit bg-fixed bg-no-repeat bg-cover bg-center" 
+    <!--Caelum hero><section class="contrast-200 z-0 mask-t-from-95% mask-t-from-gray-900 mask-b-from-50% mask-b-from-gray-900 flex flex-col h-fit bg-fixed bg-no-repeat bg-cover bg-center" 
     style="
     background-image: url(
 https://images.alphacoders.com/132/thumb-350-1327342.webp
@@ -215,27 +222,53 @@ https://images.alphacoders.com/132/thumb-350-1327342.webp
       <div class="w-screen h-screen"></div>
       <div class="w-screen h-screen"></div>
       <div class="w-screen h-screen"></div>
-    </section>
+    </section-->
     <!--Caelum Logo-->  <div id="caelum" class="px-16 md:px-46 h-fit w-full md:w-screen flex flex-col justify-end md:pt-24 bg-transparent">
-        <h2 class="text-amber-100 font-bold text-7xl uppercase text-right">
-          Lucis Caelum
+        <h2 class="text-shadow-white text-shadow-2xs text-red-500 font-bold text-8xl uppercase text-right">
+          Lucis <span class="text-white">Caelum</span>
         </h2>
       </div>
+      <!--Caelum Sneak--><div class="w-full -rotate-x-180 rotate-y-180">
+    <img src="./src/assets/imgs/border.png" width="100%" alt="">
+    </div>
     <!--Caelum Desc--><section class="bg-transparent flex flex-col lg:flex-row-reverse lg:flex-1/2 h-fit lg:flex-wrap overflow-hidden gap-4 pb-10 mb-30">
       <div class="lg:w-1/3 px-10 lg:px-30 flex flex-col flex-1 h-fit w-full">
-        <h3 class="text-red-500 font-bold text-4xl py-10 border-b-2 border-red-500 text-right">
-"It takes a lot of effort to dislike everybody equally."
+        <h3 class="text-red-500 font-bold text-4xl py-10 px-3 bg-[hsla(0,0%,0%,1)] rotate-3 text-right">
+         <span class="float-left"> 『 </span><br> It takes a lot of effort to dislike everybody equally. <br><span class="float-right">』</span>
         </h3>
-        <p class="mt-10">
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-        </p>
+        <p class="border-8 border-amber-50 outline-8 outline-black py-10 px-3 mb-10 bg-[hsla(0,0%,0%,1)] rotate-3">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+        <br> <br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
       </div>
-      <div class="cursor-zoom-in bg-red-500 mt-20 w-full h-100 lg:w-1/2 lg:h-screen hover:border-4 border-2 border-red-500"
+
+       <!--Past Present Pictures-->
+    <div id="caelum-picture" class="text-red-500 flex flex-row gap-y-2.5 justify-center items-center cursor-zoom-in bg-red-500 mt-20 w-full h-full lg:w-1/2 lg:h-screen border-8 border-red-500 outline-8 outline-black rotate-3"
       style="background-image: url(
         https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.rover.com%2Fblog%2Fwp-content%2Fuploads%2Fblack-cat-min-e1680636929915.jpg&f=1&nofb=1&ipt=d1f708fa9732522aa0724921fa421a648c8089edc9a553e1aefc512074b4ecdf
         );
       background-repeat: no-repeat; background-size: cover;
-      "></div>
+      ">
+        <div class="h-screen max-h-[600px] max-w-96">
+        <img id="ann" class="z-20" src="./src/assets/imgs/ann_old.png" alt="">
+        </div>
+        <div>
+          <button onclick="
+          document.getElementById('caelum-picture').style.backgroundImage = 'url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg4.thuthuatphanmem.vn%2Fuploads%2F2020%2F05%2F16%2Fhinh-anh-meo-mat-den_044008362.jpg&f=1&nofb=1&ipt=89b932da6d94546268c80808cec63cf3da1532f0adb5fc4bcb704571f364601f)';
+          document.getElementById('ann').src = './src/assets/imgs/ann_new.png';
+          " class="m-4 bg-black uppercase w-fit h-fit ml-1 cursor-pointer px-5 py-5 text-2xl -rotate-3 outline-4 outline-white">
+            Past
+          </button>
+          <button onclick="
+            document.getElementById('caelum-picture').style.backgroundImage = 'url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.rover.com%2Fblog%2Fwp-content%2Fuploads%2Fblack-cat-min-e1680636929915.jpg&f=1&nofb=1&ipt=d1f708fa9732522aa0724921fa421a648c8089edc9a553e1aefc512074b4ecdf)';
+            document.getElementById('ann').src = './src/assets/imgs/ann_old.png';
+            " class="m-4 bg-black  uppercase w-fit h-fit ml-1  cursor-pointer px-5 py-5 text-2xl rotate-3 outline-4 outline-white">
+            Present
+          </button>
+          </div>
+        
+    </div>
+
     </section>
 
     <!--Asha hero--><section class="contrast-200 z-0 mask-t-from-95% mask-t-from-gray-900 mask-b-from-50% mask-b-from-gray-900 flex flex-col h-fit bg-no-repeat bg-cover bg-center" 
@@ -352,11 +385,11 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
       <ul class="flex flex-col overflow-y-scroll pl-10 mt-15">
         <li class=""><h2 class="text-gray-600 text-2xl py-3 uppercase">Phantom Five</h2></li>
       </ul>
-      <ul class="flex flex-col overflow-y-scroll pl-10 h-45">
-        <li class="hover:text-amber-100"><h1 class="font-extrabold text-4xl py-1"><a href="#bokki"><button onclick="side_menu();" class="uppercase cursor-pointer">Tteok bokki</button></a></h2></li>
-        <li class="hover:text-amber-100"><h1 class="font-extrabold text-4xl py-1"><a href="#caelum"><button onclick="side_menu();" class="uppercase cursor-pointer">Lucis Caelum</button></a></h2></li>
-        <li class="hover:text-amber-100"><h1 class="font-extrabold text-4xl py-1"><a href="#asha"><button onclick="side_menu();" class="uppercase cursor-pointer">Vrtra Azdaya</button></a></h2></li>
-        <li class="hover:text-amber-100"><h1 class="font-extrabold text-4xl py-1"><a href="#tortol"><button onclick="side_menu();" class="uppercase cursor-pointer">Chow Mater</button></a></h2></li>
+      <ul class="flex flex-col overflow-y-scroll pl-10 h-80">
+        <li class="hover:text-amber-100 -rotate-2"><h1 class="font-extrabold text-4xl py-1"><a href="#bokki"><button onclick="side_menu();" class="uppercase cursor-pointer">Tteok bokki</button></a></h2></li>
+        <li class="hover:text-amber-100 -rotate-3"><h1 class="font-extrabold text-4xl py-1"><a href="#caelum"><button onclick="side_menu();" class="uppercase cursor-pointer">Lucis Caelum</button></a></h2></li>
+        <li class="hover:text-amber-100 -rotate-6"><h1 class="font-extrabold text-4xl py-1"><a href="#asha"><button onclick="side_menu();" class="uppercase cursor-pointer">Vrtra Azdaya</button></a></h2></li>
+        <li class="hover:text-amber-100 -rotate-12"><h1 class="font-extrabold text-4xl py-1"><a href="#tortol"><button onclick="side_menu();" class="uppercase cursor-pointer">Chow Mater</button></a></h2></li>
       </ul>
       <ul class="shadow-2xl shadow-black flex flex-row overflow-x-scroll py-10 pl-10 bg-[rgba(5,5,5,.1)] w-full gap-2 flex-nowrap">
         <li class="w-fit"><h4 class="text-white text-2xl px-5 py-3 uppercase bg-gray-950 rounded-4xl border-2 border-white"><a href="#story"><button onclick="side_menu();" class="uppercase cursor-pointer">Story</button></a></h4></li>

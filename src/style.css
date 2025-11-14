@@ -35,8 +35,11 @@ html {
 }
 
 @layer components {
-  button {
+  main button {
     @apply bg-red-600 text-white;
+  }
+  main h2 {
+    @apply text-shadow-2xs text-shadow-white
   }
 }
 
