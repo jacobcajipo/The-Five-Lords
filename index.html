@@ -57,7 +57,7 @@
     </header>
     
     <main class="bg-cover bg-no-repeat z-2 overflow-x-hidden transition-all ease-in-out">
-    <!--HERO--><div id="hero" class="bg-black mask-t-from-85% mask-t-from-gray-900 mask-b-from-75% bg-center bg-no-repeat bg-cover py-5 px-11.5 h-screen w-full text-amber-50 flex flex-col justify-center items-center"
+    <!--HERO--><div id="hero" class="-top-[50px] bg-black mask-t-from-85% mask-t-from-gray-900 mask-b-from-75% bg-center bg-no-repeat bg-cover py-5 px-11.5 h-screen w-full text-amber-50 flex flex-col justify-center items-center"
     style="background-image: url(
 https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperaccess.com%2Ffull%2F106070.jpg&f=1&nofb=1&ipt=c2a7e5ec95372661117180dfa207fcd8d4cda8efdb9b14e835d216ece1bc2ed7
 );
@@ -65,11 +65,16 @@ https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperaccess.com%
       <h1 class="-rotate-6 bg-black font-extrabold text-7xl text-center text-shadow-2xs text-shadow-black text-white"><span class="text-white">P</span>Han<span class="text-white">toM</span></h1>
       <h1 class="rotate-6 bg-black font-extrabold text-7xl uppercase text-shadow-2xs text-shadow-black text-white">Fi<span class="text-red-700 text-8xl">v</span>e</h1>
     </div>
-    <a href="https://rancor.netlify.app/pico8/" target="_blank">
-        <button class="animate-bounce -rotate-12 border-8 border-white outline-8 outline-black uppercase w-full cursor-pointer px-15 py-5 text-5xl absolute bottom-0">
+
+    <!--Demo Button-->
+    <div class="flex justify-center align-middle h-fit w-screen">
+      <a href="https://rancor.netlify.app/pico8/" target="_blank">
+        <button class="m-auto animate-bounce -rotate-12 border-8 border-white outline-8 outline-black uppercase max-w-[500px] cursor-pointer px-15 py-5 text-5xl">
           Play Demo
         </button>
-        </a>
+      </a>
+    </div>
+        
 
     <aside oncontextmenu="return(false)" class="text-black flex justify-center align-middle items-center w-full h-fit bg-transparent z-5">
       <div>
@@ -105,10 +110,13 @@ https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperaccess.com%
     );"
     >
       <h2 class="z-0 border-8 border-amber-50 outline-8 outline-black w-fit pt-10 px-3 font-extrabold text-5xl bg-[rgba(0,0,0,.85)] rotate-3">The Story, So Far.</h2>
-      <p class="-z-10 border-8 border-amber-50 outline-8 outline-black py-10 px-3 mb-10 bg-[hsla(0,0%,0%,1)] -rotate-3">
+      <div class="-z-10 border-8 border-amber-50 outline-8 outline-black bg-[hsla(0,0%,0%,1)] -rotate-3">
+<p class=" py-10 px-3 mb-10  rotate-3">
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
 <br> <br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
+      </div>
+      
        
         <button onclick="show_demo()" class="animate-bounce text-9xl rotate-12 border-8 border-white outline-8 outline-black m-auto w-full max-w-[300px] uppercase cursor-pointer hover:invert px-15 py-5">
           Story
@@ -119,10 +127,12 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
   >
   <div class="w-full h-fit">
  <h2 class="z-0 border-8 border-amber-50 outline-8 outline-black w-fit pt-10 px-3 font-extrabold text-8xl bg-[rgba(0,0,0,.85)] rotate-3">Heroes?</h2>
-      <p class="border-8 border-amber-50 outline-8 outline-black pt-5 px-3 mb-10 bg-[hsla(0,0%,0%,1)] -rotate-3">
+     <div class="z-10 border-8 border-amber-50 outline-8 outline-black bg-[hsla(0,0%,0%,1)] -rotate-3">
+<p class=" py-10 px-3 mb-10  rotate-3">
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
 <br> <br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
+      </div>
   </div>
   <div class="w-full h-fit">
     <img src="./src/assets/imgs/thieves.png" height="960px" width="925px" alt="">
@@ -154,38 +164,63 @@ https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.fineartameric
         <h3 class="text-amber-500 font-bold text-4xl py-10 px-3 bg-[hsla(0,0%,0%,1)] -rotate-3">
          <span class="float-left"> 『 </span><br> Be the best boy, no matter the cost. <br><span class="float-right">』</span>
         </h3>
-        <p class="border-8 border-amber-50 outline-8 outline-black py-10 px-3 mb-10 bg-[hsla(0,0%,0%,1)] -rotate-3">
+        <div class="border-8 border-amber-50 outline-8 outline-black bg-[hsla(0,0%,0%,1)]  -rotate-3">
+<p class=" py-10 px-3 mb-10 rotate-3">
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
 <br> <br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
+        </div>
+        
         
       </div>
     <!--Past Present Pictures-->
-    <div id="bokki-picture" class="bg-center text-yellow-500 flex flex-row justify-center items-center cursor-zoom-in bg-black mt-20 w-full h-screen lg:w-1/2 lg:h-screen border-8 border-yellow-500 outline-8 outline-black -rotate-3"
+    <div id="bokki-picture" class="transition-all ease-in-out bg-white rounded-4xl bg-center text-yellow-500 flex flex-row justify-center items-center cursor-zoom-in mt-20 w-full h-screen lg:w-1/2 lg:h-screen border-8 border-yellow-500 outline-8 outline-black -rotate-3"
       >
         <div class="w-1/3 text-left">
-          <button onclick="          
+
+          <button>
+          <input type="radio" name="futaba-radio" id="" 
+          class="block w-[60px] h-[60px]" 
+          onfocus="          
           //document.getElementById('futaba').src = ('./src/assets/imgs/futaba_new.png');
-          document.getElementById('futaba_new').style.opacity = '100';
-             document.getElementById('futaba_old').style.opacity = '0';
-          //document.getElementById('bokki-picture').style.backgroundImage = 'url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.fotofits.com%2Fpetzlover%2Fgallery%2Fimg%2Fl%2Fgerman-shepherd-686128.jpg&f=1&nofb=1&ipt=d6f833ffa0781dc31c060017474c83ae5cc0af20531037d70b3dea6dc5d430cc)';
+              document.getElementById('futaba_new').style.opacity = '100';
+              document.getElementById('futaba_old').style.opacity = '0';
+              document.getElementById('bokki-picture').style.backgroundColor = 'var(--color-yellow-500)';
+          ">PAST
+          </button>
+
+          <button>
+          <input type="radio" name="futaba-radio" id="" checked
+          class="block w-[60px] h-[60px]" 
+          onfocus="
+            //document.getElementById('futaba').src = ('./src/assets/imgs/futaba_old.png');
+                document.getElementById('futaba_old').style.opacity = '100';
+                document.getElementById('futaba_new').style.opacity = '0';
+                document.getElementById('bokki-picture').style.backgroundColor = 'white';
+          ">PRESENT
+          </button>
+
+
+          <!--button onclick="          
+          //document.getElementById('futaba').src = ('./src/assets/imgs/futaba_new.png');
+              document.getElementById('futaba_new').style.opacity = '100';
+              document.getElementById('futaba_old').style.opacity = '0';
+              document.getElementById('bokki-picture').style.backgroundColor = 'var(--color-yellow-500)';
           " class="m-4 bg-black uppercase w-fit h-fit ml-4 cursor-pointer px-5 py-5 text-2xl rotate-3 outline-4 outline-white">
             Past
           </button>
           <button id="" onclick="
             //document.getElementById('futaba').src = ('./src/assets/imgs/futaba_old.png');
-            document.getElementById('futaba_old').style.opacity = '100';
-             document.getElementById('futaba_new').style.opacity = '0';
-            //document.getElementById('bokki-picture').style.backgroundImage = 'url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.9t1jACL7uxLHwf4S3wEf1gHaEo%3Fpid%3DApi&f=1&ipt=f5cbd992cfb4069e3e0e34582ae20b6f6205548c9f6f5b76227429140ab6610d&ipo=images)';
-            " class="m-4 bg-black  uppercase w-fit h-fit ml-4  cursor-pointer px-5 py-5 text-2xl -rotate-3 outline-4 outline-white">
+                document.getElementById('futaba_old').style.opacity = '100';
+                document.getElementById('futaba_new').style.opacity = '0';
+                document.getElementById('bokki-picture').style.backgroundColor = 'white';
+                        " class=" transition-all ease-in-out m-4 bg-black  uppercase w-fit h-fit ml-4  cursor-pointer px-5 py-5 text-2xl -rotate-3 outline-4 outline-white">
             Present
-          </button>
+          </button-->
           </div>
         <div class="h-full max-h-[600px] w-2/3">
-          
-
         <img class="opacity-0 absolute transition-opacity ease-in-out" id="futaba_new"  src="./src/assets/imgs/futaba_new.png" alt="">
-        <img class="opacity-100 absolute transition-opacity ease-in-out" id="futaba_old" src="./src/assets/imgs/futaba_old.png" alt="">
+        <img class="opacity-0 absolute transition-opacity ease-in-out" id="futaba_old" src="./src/assets/imgs/futaba_old.png" alt="">
       </div>
     </div>
 
