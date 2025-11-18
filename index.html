@@ -102,12 +102,12 @@ https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperaccess.com%
       </div>
     </aside>
     
-    <!--Story Overview--><div id="story" class="mask-t-from-95% mask-t-from-gray-900 mask-b-from-95% mask-b-from-gray-900 bg-no-repeat bg-top bg-cover text-center text-white py-50 md:py-40 md:px-46 flex flex-col flex-1 h-fit w-full"
+    <!--Story Overview--><div class="mask-t-from-95% mask-t-from-gray-900 mask-b-from-95% mask-b-from-gray-900 bg-no-repeat bg-top bg-cover text-center text-white py-50 md:py-40 md:px-46 flex flex-col flex-1 h-fit w-full"
     style="background-image: url(
 https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperaccess.com%2Ffull%2F2369529.png&f=1&nofb=1&ipt=672a080cfa0f13b2f0c54b6835161791223989b71f40341f512bc096b365b478
     );"
     >
-      <h2 class="z-0 border-8 border-amber-50 outline-8 outline-black w-fit pt-10 px-3 font-extrabold text-5xl bg-[rgba(0,0,0,.85)] rotate-3">The Story, So Far.</h2>
+      <h2 id="story" class="z-0 border-8 border-amber-50 outline-8 outline-black w-fit pt-10 px-3 font-extrabold text-5xl bg-[rgba(0,0,0,.85)] rotate-3">The Story, So Far.</h2>
       <div class="-z-10 border-8 border-amber-50 outline-8 outline-black bg-[hsla(0,0%,0%,1)] -rotate-3">
 <p class=" py-10 px-3 mb-10  rotate-3">
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
@@ -121,11 +121,11 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
         </button>
         
     </div>
-    <!--The Warriors--><div id="characters" class="text-center bg-transparent bg-no-repeat bg-cover text-white py-50 md:py-40 md:px-46 flex flex-col lg:flex-row flex-1 h-fit w-full"
+    <!--The Warriors--><div class="text-center bg-transparent bg-no-repeat bg-cover text-white py-50 md:py-40 md:px-46 flex flex-col lg:flex-row flex-1 h-fit w-full"
   >
   <div class="w-full h-fit">
- <h2 class="z-0 border-8 border-amber-50 outline-8 outline-black w-fit pt-10 px-3 font-extrabold text-8xl bg-[rgba(0,0,0,.85)] rotate-3">Heroes?</h2>
-     <div class="z-10 border-8 border-amber-50 outline-8 outline-black bg-[hsla(0,0%,0%,1)] -rotate-3">
+ <h2 id="characters" class="z-0 border-8 border-amber-50 outline-8 outline-black w-fit pt-10 px-3 font-extrabold text-8xl bg-[rgba(0,0,0,.85)] rotate-3">Heroes?</h2>
+     <div  class="z-10 border-8 border-amber-50 outline-8 outline-black bg-[hsla(0,0%,0%,1)] -rotate-3">
 <p class=" py-10 px-3 mb-10  rotate-3">
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
 <br> <br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -170,7 +170,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
         </div>
       </div>
     <!--Past Present Pictures-->
-    <div id="bokki-picture" class="transition-all ease-in-out bg-white rounded-4xl bg-center text-yellow-500 flex flex-row justify-center items-center cursor-zoom-in mt-20 w-full h-screen lg:w-1/2 lg:h-screen border-8 border-amber-500 outline-8 outline-black -rotate-3"
+    <div id="bokki-picture" class="transition-all ease-in-out bg-amber-500 rounded-4xl bg-center text-yellow-500 flex flex-row justify-center items-center cursor-zoom-in mt-20 w-full h-120 lg:w-1/2 lg:h-screen border-8 border-white outline-8 outline-black -rotate-3"
       >
         <div class="w-1/3 text-left">
           <!--RADio-->
@@ -206,7 +206,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
               document.getElementById('futaba_old').style.opacity = '0';
               document.getElementById('bokki-picture').style.backgroundColor = 'var(--color-amber-500)';
               document.getElementById('bokki-picture').style.borderColor = 'var(--color-white)';
-          " class="m-4 bg-black uppercase w-fit h-fit ml-4 cursor-pointer px-5 py-5 text-2xl rotate-3 border-8 border-black ">
+          " class="m-4 bg-white text-amber-500 uppercase w-fit h-fit ml-4 cursor-pointer px-5 py-5 text-2xl rotate-3 border-8 border-black ">
             Past
           </button>
           <button id="futaba-button-old" onclick="
@@ -218,13 +218,13 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
                 document.getElementById('futaba_new').style.opacity = '0';
                 document.getElementById('bokki-picture').style.backgroundColor = 'var(--color-white)';
                 document.getElementById('bokki-picture').style.borderColor = 'var(--color-amber-500)';
-            " class="bg-amber-500 transition-all ease-in-out m-4  uppercase w-fit h-fit ml-4  cursor-pointer px-5 py-5 text-2xl -rotate-3 border-8 border-black">
+            " class="bg-black transition-all ease-in-out m-4  uppercase w-fit h-fit ml-4  cursor-pointer px-5 py-5 text-2xl -rotate-3 border-8 border-black">
             Present
           </button>
           </div>
         <div class="h-full max-h-[600px] w-2/3">
-        <img class="opacity-0 absolute transition-opacity ease-in-out" id="futaba_new"  src="./src/assets/imgs/futaba_new.png" alt="">
-        <img class="opacity-100 absolute transition-opacity ease-in-out" id="futaba_old" src="./src/assets/imgs/futaba_old.png" alt="">
+        <img class="opacity-100 absolute transition-opacity ease-in-out" id="futaba_new"  src="./src/assets/imgs/futaba_new.png" alt="">
+        <img class="opacity-0 absolute transition-opacity ease-in-out" id="futaba_old" src="./src/assets/imgs/futaba_old.png" alt="">
       </div>
     </div>
 
@@ -275,7 +275,7 @@ https://images.alphacoders.com/132/thumb-350-1327342.webp
     <!--Caelum Desc--><section class="bg-transparent flex flex-col lg:flex-row-reverse lg:flex-1/2 h-fit lg:flex-wrap overflow-hidden gap-4 pb-10 mb-30">
       <div class="lg:w-1/3 px-10 lg:px-30 flex flex-col flex-1 h-fit w-full">
         <h3 class="text-red-500 font-bold text-4xl py-10 px-3 bg-[hsla(0,0%,0%,1)] rotate-3">
-         <span class="float-left"> 『 </span><br> It takes a lot of effort to dislike everybody equally. <br><span class="float-right">』</span>
+         <span class="float-left"> 『 </span><br> Took a lot of effort to dislike everybody equally. <br><span class="float-right">』</span>
         </h3>
         <div class="border-8 border-amber-50 outline-8 outline-black bg-[hsla(0,0%,0%,1)]  rotate-3">
 <p class=" py-10 px-3 mb-10 -rotate-3">
@@ -286,39 +286,15 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
       </div>
 
       <!--Past Present Pictures-->
-    <div id="caelum-picture" class="transition-all ease-in-out bg-white rounded-4xl bg-center text-red-500 flex flex-row justify-center items-center cursor-zoom-in mt-20 w-full h-screen lg:w-1/2 lg:h-screen border-8 border-red-500 outline-8 outline-black rotate-3"
+    <div id="caelum-picture" class="transition-all ease-in-out bg-red-500 rounded-4xl bg-center text-red-500 flex flex-row justify-center items-center cursor-zoom-in mt-20 w-full h-120 lg:w-1/2 lg:h-screen border-8 border-white outline-8 outline-black rotate-3"
       >
 
         <div class="h-full max-h-[600px] w-2/3">
-        <img class="opacity-0 absolute transition-opacity ease-in-out" id="ann_new"  src="./src/assets/imgs/ann_new.png" alt="">
-        <img class="opacity-100 absolute transition-opacity ease-in-out" id="ann_old" src="./src/assets/imgs/ann_old.png" alt="">
+        <img class="opacity-100 absolute transition-opacity ease-in-out" id="ann_new"  src="./src/assets/imgs/ann_new.png" alt="">
+        <img class="opacity-0 absolute transition-opacity ease-in-out" id="ann_old" src="./src/assets/imgs/ann_old.png" alt="">
         </div>
 
         <div class="w-1/3 text-right">
-          <!--RADio-->
-          <!--button>
-          <input type="radio" name="futaba-radio" id="" 
-          class="block w-[60px] h-[60px]" 
-          onfocus="          
-          //document.getElementById('futaba').src = ('./src/assets/imgs/futaba_new.png');
-              document.getElementById('futaba_new').style.opacity = '100';
-              document.getElementById('futaba_old').style.opacity = '0';
-              document.getElementById('bokki-picture').style.backgroundColor = 'var(--color-yellow-500)';
-          ">PAST
-          </button>
-
-          <button>
-          <input type="radio" name="futaba-radio" id="" checked
-          class="block w-[60px] h-[60px]" 
-          onfocus="
-            //document.getElementById('futaba').src = ('./src/assets/imgs/futaba_old.png');
-                document.getElementById('futaba_old').style.opacity = '100';
-                document.getElementById('futaba_new').style.opacity = '0';
-                document.getElementById('bokki-picture').style.backgroundColor = 'white';
-          ">PRESENT
-          </button-->
-           
-
           <button id="ann-button-new" onclick="          
           //document.getElementById('ann').src = ('./src/assets/imgs/ann_new.png');
               this.style.backgroundColor = 'var(--color-white)';
@@ -328,7 +304,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
               document.getElementById('ann_old').style.opacity = '0';
               document.getElementById('caelum-picture').style.backgroundColor = 'var(--color-red-500)';
               document.getElementById('caelum-picture').style.borderColor = 'var(--color-white)';
-          " class="m-4 bg-black uppercase w-fit h-fit ml-4 cursor-pointer px-5 py-5 text-2xl rotate-3 border-8 border-black ">
+          " class="m-4 bg-white text-red-500 uppercase w-fit h-fit ml-4 cursor-pointer px-5 py-5 text-2xl rotate-3 border-8 border-black ">
             Past
           </button>
           <button id="ann-button-old" onclick="
@@ -340,7 +316,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
                 document.getElementById('ann_new').style.opacity = '0';
                 document.getElementById('caelum-picture').style.backgroundColor = 'var(--color-white)';
                 document.getElementById('caelum-picture').style.borderColor = 'var(--color-red-500)';
-            " class="bg-red-500 transition-all ease-in-out m-4  uppercase w-fit h-fit ml-4  cursor-pointer px-5 py-5 text-2xl -rotate-3 border-8 border-black">
+            " class="bg-black transition-all ease-in-out m-4  uppercase w-fit h-fit ml-4  cursor-pointer px-5 py-5 text-2xl -rotate-3 border-8 border-black">
             Present
           </button>
           </div>
@@ -349,67 +325,170 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
     </section>
 
-    <!--Asha hero--><section class="contrast-200 z-0 mask-t-from-95% mask-t-from-gray-900 mask-b-from-50% mask-b-from-gray-900 flex flex-col h-fit bg-no-repeat bg-cover bg-center" 
+    <!--Asha hero><section class="contrast-200 z-0 mask-t-from-95% mask-t-from-gray-900 mask-b-from-50% mask-b-from-gray-900 flex flex-col h-fit bg-no-repeat bg-cover bg-center" 
     style="
     background-image: url(
 https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperbat.com%2Fimg%2F152119-red-cat-wallpaper.jpg&f=1&nofb=1&ipt=2f803f8e51a5f1212c85a9168ed1d03b7fdc00bc9574ae22c395bef2a5fcd0c6
 );
     ">
       <div class="w-screen h-screen"></div>
-    </section>
-    <!--Asha Logo-->  <div id="asha" class="px-16 md:px-46 h-fit w-full md:w-screen flex flex-col justify-end md:pt-24 bg-transparent">
-        <h2 class="text-amber-100 font-bold text-7xl uppercase text-left">
-          Vrtra Azdaya
+    </section-->
+    
+
+    <!--asha Logo-->  <div id="asha" class="px-16 md:px-46 h-fit w-full md:w-screen flex flex-col justify-end md:pt-24">
+        <h2 class="z-10 -rotate-3 text-green-500 font-bold text-7xl uppercase text-left">
+          Vrtra <span class="text-white">Azdaya</span>
         </h2>
       </div>
-    <!--Asha Desc--><section class="flex flex-col lg:flex-row lg:flex-1/2 h-fit lg:flex-wrap overflow-hidden gap-4 pb-10 mb-30">
-      <div class=" lg:w-1/3 px-10 lg:px-30 flex flex-col flex-1 h-fit w-full">
-        <h3 class="text-green-500 font-bold text-4xl py-10 border-b-2 border-green-500">
-"Have courage and be kind- It's all that I can offer."
+    <!--asha Sneak--><div class="w-full">
+    <img src="./src/assets/imgs/border.png" width="100%" alt="">
+    </div>
+    <!--asha Desc--><section class="bg-transparent flex flex-col lg:flex-row lg:flex-1/2 h-fit lg:flex-wrap overflow-hidden gap-4 pb-10 mb-30"
+    style="background-image: url(
+      ./src/assets/imgs/triangle.png
+    );"
+    >
+      <div class="lg:w-1/3 px-10 lg:px-30 flex flex-col flex-1 h-fit w-full">
+        <h3 class="text-green-500 font-bold text-4xl py-10 px-3 bg-[hsla(0,0%,0%,1)] -rotate-3">
+         <span class="float-left"> 『 </span><br> Kindess- It's all I've got to offer. <br><span class="float-right">』</span>
         </h3>
-        <p class="mt-10">
+        <div class="border-8 border-amber-50 outline-8 outline-black bg-[hsla(0,0%,0%,1)]  -rotate-3">
+<p class=" py-10 px-3 mb-10 rotate-3">
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-        </p>
+<br> <br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+        </div>
       </div>
-      <div class="cursor-zoom-in bg-red-500 mt-20 w-full h-100 lg:w-1/2 lg:h-screen hover:border-4 border-2 border-green-500"
-      style="background-image: url(
-https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpetvarsity.com%2Fwp-content%2Fuploads%2F2024%2F01%2FOmega-3-Fatty-Acids-and-Their-Benefits.webp&f=1&nofb=1&ipt=82c28d64115a7ba4b0ca62418f3bccaf8047a218002b08c930a4db434e985c37
-        );
-      background-repeat: no-repeat; background-size: cover;
-      "></div>
+    <!--Past Present Pictures-->
+    <div id="asha-picture" class="transition-all ease-in-out bg-green-500 rounded-4xl bg-center text-green-500 flex flex-row justify-center items-center cursor-zoom-in mt-20 w-full h-120 lg:w-1/2 lg:h-screen border-8 border-white outline-8 outline-black -rotate-3"
+      >
+        <div class="w-1/3 text-left" >
+          <button id="makoto-button-new" onclick="          
+          //document.getElementById('futaba').src = ('./src/assets/imgs/makoto_new.png');
+              this.style.backgroundColor = 'var(--color-white)';
+              this.style.color = 'var(--color-green-500)';
+              document.getElementById('makoto-button-old').style.backgroundColor = 'var(--color-black)';
+              document.getElementById('makoto_new').style.opacity = '100';
+              document.getElementById('makoto_old').style.opacity = '0';
+              document.getElementById('asha-picture').style.backgroundColor = 'var(--color-green-500)';
+              document.getElementById('asha-picture').style.borderColor = 'var(--color-white)';
+          " class="bg-white text-green-500 m-4  uppercase w-fit h-fit ml-4 cursor-pointer px-5 py-5 text-2xl rotate-3 border-8 border-black ">
+            Past
+          </button>
+          <button id="makoto-button-old" onclick="
+            //document.getElementById('futaba').src = ('./src/assets/imgs/makoto_old.png');
+                this.style.backgroundColor = 'var(--color-green-500)';
+                document.getElementById('makoto-button-new').style.backgroundColor = 'var(--color-black)';
+                document.getElementById('makoto-button-new').style.color = 'var(--color-white)';
+                document.getElementById('makoto_old').style.opacity = '100';
+                document.getElementById('makoto_new').style.opacity = '0';
+                document.getElementById('asha-picture').style.backgroundColor = 'var(--color-white)';
+                document.getElementById('asha-picture').style.borderColor = 'var(--color-green-500)';
+            " class="bg-black transition-all ease-in-out m-4  uppercase w-fit h-fit ml-4  cursor-pointer px-5 py-5 text-2xl -rotate-3 border-8 border-black">
+            Present
+          </button>
+          </div>
+        <div class="h-full max-h-[600px] w-2/3 ">
+        <img class=" opacity-100 absolute transition-opacity ease-in-out" id="makoto_new"  src="./src/assets/imgs/makoto_new.png" alt="">
+        <img class="opacity-0 absolute transition-opacity ease-in-out" id="makoto_old" src="./src/assets/imgs/makoto_old.png" alt="">
+      </div>
+    </div>
+
+      <!--section class="overflow-x-auto md:overflow-x-hidden md:m-auto md:w-auto">
+        <div class="flex flex-row w-fit ml-10 md:ml-0 md:w-screen gap-x-4 flex-nowrap md:justify-center">
+          <div class="cursor-zoom-in bg-green-500 w-100 h-100 md:w-1/3 hover:border-4 border-amber-300"
+          style="
+          background-image: url(
+https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.istockphoto.com%2Fid%2F1328132950%2Fphoto%2Fpetting-german-shepherd.jpg%3Fs%3D170667a%26w%3D0%26k%3D20%26c%3DbRoWgTInZt0lyhLrKJtgy743gwAjIulmLjcgFG5tQ9c%3D&f=1&nofb=1&ipt=31f8568892d374931173b53f4427f3bbd13ac31a90ed7ad687eb77a5457e152e
+          );
+          background-repeat: no-repeat; background-size: cover; background-position: center;">
+          <p class="text-black">
+            LIKES
+          </p>
+        </div>
+          <div class="cursor-zoom-in bg-blue-500  w-100 h-100 md:w-1/3 md:h-100 hover:border-4 border-amber-300"
+          style="
+          background-image: url(
+https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fmedia-cache-ec0.pinimg.com%2F736x%2F75%2F41%2F1f%2F75411f489b7d0ab038038cc4130b4de8.jpg&f=1&nofb=1&ipt=0ee347e35db614a9077a1a2be203213938d8eaba40e21274cc6769bfae08591f
+          );
+          background-repeat: no-repeat; background-size: cover; background-position: center;">
+          <p>
+            HATES
+          </p>
+        </div>
+      </div>
+      </section-->
     </section>
 
-    <!--tortle hero--><section class="contrast-200 z-0 mask-t-from-95% mask-t-from-gray-900 mask-b-from-50% mask-b-from-gray-900 flex flex-col h-fit bg-no-repeat bg-cover bg-position-[70%]" 
+    <!--tortle hero><section class="contrast-200 z-0 mask-t-from-95% mask-t-from-gray-900 mask-b-from-50% mask-b-from-gray-900 flex flex-col h-fit bg-no-repeat bg-cover bg-position-[70%]" 
     style="
     background-image: url(
 https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fd1jyxxz9imt9yb.cloudfront.net%2Fmedialib%2F5727%2Fimage%2Fs1300x1300%2FIFAW-Florence-91909-29_reduced.jpg&f=1&nofb=1&ipt=34e7473e1d2a66b5011eec9936d6c4a03186ba6145b01eefa42873f542c9e779
 );
     ">
       <div class="w-screen h-screen"></div>
-    </section>
-    <!--tortle Logo-->  <div id="tortol" class="px-16 md:px-46 h-fit w-full md:w-screen flex flex-col justify-end md:pt-24 bg-transparent">
-        <h2 class="text-amber-100 font-bold text-7xl uppercase text-right">
-          Chow Mater
+    </section-->
+        <!--tortol Logo-->  <div id="tortol" class="px-16 md:px-46 h-fit w-full md:w-screen flex flex-col justify-end md:pt-24 bg-transparent">
+        <h2 class="text-shadow-white text-shadow-2xs text-violet-500 font-bold text-7xl uppercase text-right">
+          Chow <span class="text-yellow-300">+</span><span class="text-white"> Mater</span>
         </h2>
       </div>
-    <!--tortle Desc--><section class="flex flex-col lg:flex-row-reverse lg:flex-1/2 h-fit lg:flex-wrap overflow-hidden gap-4 pb-10 mb-30">
+      <!--tortol Sneak--><div class="w-full -rotate-x-180 rotate-y-180">
+    <img src="./src/assets/imgs/border.png" width="100%" alt="">
+    </div>
+    <!--tortol Desc--><section class="bg-transparent flex flex-col lg:flex-row-reverse lg:flex-1/2 h-fit lg:flex-wrap overflow-hidden gap-4 pb-10 mb-30">
       <div class="lg:w-1/3 px-10 lg:px-30 flex flex-col flex-1 h-fit w-full">
-        <h3 class="text-right text-violet-500 font-bold text-4xl py-10 border-b-2 border-violet-500">
- "We did what they said was impossible: We. Stacked."
+        <h3 class="text-violet-500 font-bold text-4xl py-10 px-3 bg-[hsla(0,0%,0%,1)] rotate-3">
+         <span class="float-left"> 『 </span><br> Stacking was not possible, but it's necessary. <br><span class="float-right">』</span>
         </h3>
-        <p class="mt-10">
+        <div class="border-8 border-amber-50 outline-8 outline-black bg-[hsla(0,0%,0%,1)]  rotate-3">
+<p class=" py-10 px-3 mb-10 -rotate-3">
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-        </p>
+<br> <br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+        </div>
       </div>
-      <div class="cursor-zoom-in bg-red-500 mt-20 w-full h-100 lg:w-1/2 lg:h-screen hover:border-4 border-2 border-violet-500"
-      style="background-image: url(
-https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F30319483%2Fpexels-photo-30319483%2Ffree-photo-of-two-turtles-resting-in-a-wire-enclosure-outdoors.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26w%3D1260%26h%3D750%26dpr%3D1&f=1&nofb=1&ipt=d58f171191bf2209e9ec98231c11c6c2d3f030d9e89a5f6a07106939820ae9c8
-        );
-      background-repeat: no-repeat; background-size: cover;
-      "></div>
+
+      <!--Past Present Pictures-->
+    <div id="tortol-picture" class="transition-all ease-in-out bg-violet-500 rounded-4xl bg-center text-red-500 flex flex-row justify-center items-center cursor-zoom-in mt-20 w-full h-120 lg:w-1/2 lg:h-screen border-8 border-white outline-8 outline-black rotate-3">
+
+        <div class="h-full max-h-[600px] w-2/3">
+        <img class="opacity-100 absolute transition-opacity ease-in-out" id="joker_new"  src="./src/assets/imgs/joker_new.png" alt="">
+        <img class="opacity-0 absolute transition-opacity ease-in-out" id="joker_old" src="./src/assets/imgs/joker_old.png" alt="">
+        </div>
+
+        <div class="w-1/3 text-right">
+          <button id="joker-button-new" onclick="          
+          //document.getElementById('ann').src = ('./src/assets/imgs/ann_new.png');
+              this.style.backgroundColor = 'var(--color-white)';
+              this.style.color = 'var(--color-violet-500)';
+              document.getElementById('joker-button-old').style.backgroundColor = 'var(--color-black)';
+              document.getElementById('joker_new').style.opacity = '100';
+              document.getElementById('joker_old').style.opacity = '0';
+              document.getElementById('tortol-picture').style.backgroundColor = 'var(--color-violet-500)';
+              document.getElementById('tortol-picture').style.borderColor = 'var(--color-white)';
+          " class="bg-white text-violet-500 m-4  uppercase w-fit h-fit ml-4 cursor-pointer px-5 py-5 text-2xl rotate-3 border-8 border-black ">
+            Past
+          </button>
+          <button id="joker-button-old" onclick="
+            //document.getElementById('ann').src = ('./src/assets/imgs/ann_old.png');
+                this.style.backgroundColor = 'var(--color-violet-500)';
+                document.getElementById('joker-button-new').style.backgroundColor = 'var(--color-black)';
+                document.getElementById('joker-button-new').style.color = 'var(--color-white)';
+                document.getElementById('joker_old').style.opacity = '100';
+                document.getElementById('joker_new').style.opacity = '0';
+                document.getElementById('tortol-picture').style.backgroundColor = 'var(--color-white)';
+                document.getElementById('tortol-picture').style.borderColor = 'var(--color-violet-500)';
+            " class="bg-black transition-all ease-in-out m-4  uppercase w-fit h-fit ml-4  cursor-pointer px-5 py-5 text-2xl -rotate-3 border-8 border-black">
+            Present
+          </button>
+          </div>
+        
+    </div>
+
     </section>
 
-<!--Battle System--><div class="mask-t-from-95% mask-t-from-gray-900 mask-b-from-95% mask-b-from-gray-900 bg-no-repeat bg-center bg-cover text-center text-white py-50 md:py-40 md:px-46 flex flex-col flex-1 h-fit w-full"
+<!--Battle System><div class="mask-t-from-95% mask-t-from-gray-900 mask-b-from-95% mask-b-from-gray-900 bg-no-repeat bg-center bg-cover text-center text-white py-50 md:py-40 md:px-46 flex flex-col flex-1 h-fit w-full"
     style="background-image: url(
 https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fsteamuserimages-a.akamaihd.net%2Fugc%2F866239626966123927%2F5AACEF08B8362F18F7FC01D0FEAA24343540E5A0%2F&f=1&nofb=1&ipt=64caf6633a92c2341d41fada564e7bdaeaebbe04be50465513452d9a048889f8
     );"
@@ -448,31 +527,32 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
         </button>
       </div>
     </aside>
-    </div>
+    </div-->
         
+     <!--footer mask--><div class="w-full">
+    <img src="" width="100%" alt="">
+    </div>
     </main>
 
     <!--SideBar-->
     <aside id="side-menu" class="flex-col h-full opacity-0 transition-opacity ease-in-out">
-    <div class="bg-no-repeat bg-cover shadow-2xl shadow-black flex flex-col overflow-y-scroll bg-transparent h-screen text-amber-50 ml-20 md:ml-96 w-5/6 md:w-1/2 top-0 right-0 fixed z-10"
+    <div class="bg-no-repeat bg-cover shadow-2xl shadow-black flex flex-col overflow-y-scroll bg-transparent h-screen text-amber-50 ml-20 md:ml-96 w-screen top-0 right-0 fixed z-10"
     style="background-image: url(
 https://wallpapercave.com/wp/wp3103056.jpg
       );"
     >
       
-      <ul class="flex flex-col overflow-y-scroll pl-10 mt-10 h-fit bg-transparent">
-        <li class=""><h2 class="text-white text-2xl py-3 uppercase">Phantom Five</h2></li>
+
+      <ul class="flex flex-col justify-center gap-5 overflow-visible pl-0 h-3/4 lg:absolute lg:self-center sm:absolute sm:self-end">
+        <li class="-rotate-6 hover:text-amber-100"><h1 class="font-extrabold text-4xl py-1"><a class=" p-2 bg-black border-4 border-white outline-8 outline-black text-center" href="#bokki"><button onclick="side_menu();" class="uppercase cursor-pointer">Tteok bokki</button></a></h2></li>
+        <li class="-rotate-6 hover:text-amber-100"><h1 class="font-extrabold text-4xl py-1"><a class=" p-2 bg-black border-4 border-white outline-8 outline-black text-center" href="#caelum"><button onclick="side_menu();" class="uppercase cursor-pointer">Lucis Caelum</button></a></h2></li>
+        <li class="-rotate-6 hover:text-amber-100"><h1 class="font-extrabold text-4xl py-1"><a class=" p-2 bg-black border-4 border-white outline-8 outline-black text-center" href="#asha"><button onclick="side_menu();" class="uppercase cursor-pointer">Vrtra Azdaya</button></a></h2></li>
+        <li class="-rotate-6 hover:text-amber-100"><h1 class="font-extrabold text-4xl py-1"><a class=" p-2 bg-black border-4 border-white outline-8 outline-black text-center" href="#tortol"><button onclick="side_menu();" class="uppercase cursor-pointer">Chow + Mater</button></a></h2></li>
       </ul>
-      <ul class="flex flex-col justify-center gap-5 overflow-y-scroll pl-0 h-1/2">
-        <li class="-rotate-3 hover:text-amber-100"><h1 class="font-extrabold text-4xl py-1"><a class=" p-2 bg-black border-4 border-white outline-8 outline-black text-center" href="#bokki"><button onclick="side_menu();" class="uppercase cursor-pointer">Tteok bokki</button></a></h2></li>
-        <li class="-rotate-3 hover:text-amber-100"><h1 class="font-extrabold text-4xl py-1"><a class=" p-2 bg-black border-4 border-white outline-8 outline-black text-center" href="#caelum"><button onclick="side_menu();" class="uppercase cursor-pointer">Lucis Caelum</button></a></h2></li>
-        <li class="-rotate-3 hover:text-amber-100"><h1 class="font-extrabold text-4xl py-1"><a class=" p-2 bg-black border-4 border-white outline-8 outline-black text-center" href="#asha"><button onclick="side_menu();" class="uppercase cursor-pointer">Vrtra Azdaya</button></a></h2></li>
-        <li class="-rotate-3 hover:text-amber-100"><h1 class="font-extrabold text-4xl py-1"><a class=" p-2 bg-black border-4 border-white outline-8 outline-black text-center" href="#tortol"><button onclick="side_menu();" class="uppercase cursor-pointer">Chow Mater</button></a></h2></li>
-      </ul>
-      <ul class="shadow-2xl shadow-black flex flex-row overflow-x-scroll py-10 pl-10 bg-[rgba(5,5,5,.1)] w-full gap-2 flex-nowrap">
+      <ul class="shadow-2xl shadow-black flex flex-row overflow-x-scroll h-1/4 py-10 pl-10 bg-[rgba(5,5,5,.1)] w-full gap-2 flex-nowrap absolute bottom-0">
         <li class="w-fit"><h4 class="text-white text-2xl px-5 py-3 uppercase bg-gray-950 rounded-4xl border-2 border-white"><a href="#story"><button onclick="side_menu();" class="uppercase cursor-pointer">Story</button></a></h4></li>
         <li class="w-fit"><h4 class="text-white text-2xl px-5 py-3 uppercase bg-gray-950 rounded-4xl border-2 border-white"><a href="#characters"><button onclick="side_menu();" class="uppercase cursor-pointer">Characters</button></a></h4></li>
-        <li class="w-fit"><h4 class="text-white text-2xl px-5 py-3 uppercase bg-gray-950 rounded-4xl border-2 border-white"><a href="#battle"><button onclick="side_menu();" class="uppercase cursor-pointer">Battle&nbsp;System</button></a></h4></li>
+        <!--li class="w-fit"><h4 class="text-white text-2xl px-5 py-3 uppercase bg-gray-950 rounded-4xl border-2 border-white"><a href="#battle"><button onclick="side_menu();" class="uppercase cursor-pointer">Battle&nbsp;System</button></a></h4></li-->
         <li class="w-fit"><h4 class="text-white text-2xl px-5 py-3 uppercase bg-red-700 rounded-4xl border-2 border-white"><a href="https://rancor.netlify.app/"><button onclick="side_menu();" class="uppercase cursor-pointer">EXIT</button></a></h4></li>
       </ul>
     </div>
